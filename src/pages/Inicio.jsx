@@ -1,7 +1,7 @@
 function Inicio() {
   return (
     <div>
-
+      home
     </div>
   )
 }

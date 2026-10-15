@@ -1,15 +1,15 @@
-import { Route } from 'react-router'
-import { Routes } from 'react-router'
-
+import { Routes, Route } from 'react-router-dom'
 import Inicio from './pages/Inicio'
 import Productos from './pages/Productos'
 import Contacto from './pages/Contacto'
 import DetalleProducto from './pages/DetalleProducto'
 import Carrito from './pages/Carrito'
+import Header from './components/Header'
 
 function App() {
   return (
     <>
+      <Header/>
       <Routes>
         <Route path='/' element={<Inicio />} />
         <Route path='/productos' element={<Productos />} />
