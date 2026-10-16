@@ -1,19 +1,17 @@
-import React from 'react'
-
 function Grilla({ filas, columnas, contenido }) {
-const elementosFilas = [];
+  const elementosFilas = [];
   for (let fila = 0; fila < filas; fila++) {
     const elementosColumnas = [];
     for (let columna = 0; columna < columnas; columna++) {
       const indice = fila * columnas + columna;
       elementosColumnas.push(
-        <div className={`col-${12 / columnas}`}>
+        <div key={indice} className={`col-${12 / columnas}`}>
           {contenido[indice]}
         </div>
       );
     }
     elementosFilas.push(
-      <div className="row">
+      <div className="row" key={fila}>
         {elementosColumnas}
       </div>
     );
