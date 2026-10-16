@@ -4,6 +4,13 @@ padding: 0;
 box-sizing: border-box;
 }
 
+.grillaDeImagenes {
+            img {
+            width: 100%;
+            aspect-ratio: 16 / 9 ;
+        }
+    }
+
 [class*="col-"] {
 float: left;
 padding: 1%;
