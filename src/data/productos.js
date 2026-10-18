@@ -15,10 +15,82 @@ export const productos = [
         stock: 10
     }, {
         id:3,
-        nombre: "The Binding of Cachito: Zona Oeste Core",
+        nombre: "TBoC: Zona Oeste Core",
         precio: 20000,
         imagen: "/img/cachito-2.jpg",
         descripcion: "Cachito abandona el campo para viajar a Buenos Aires por la visita del Papa, pero se queda dormido en el Tren Sarmiento y termina atrapado en Haedo al caer la noche. Una maldición provocada por un apagón de Edenor ha convertido el Conurbano en un infierno lleno de criaturas monstruosas, colectivos asesinos y fisuras poseídos por el ritmo ragatanga. Armado con su termo Lumilagro, un mate justiciero y un perro callejero, deberá llegar al mítico Gallo de Morón para salvar la Zona Oeste antes del amanecer.",
         stock: 2
+    },
+    {
+        id:4,
+        nombre: "GTA: Sonic Edition",
+        precio: 20000,
+        imagen: "/img/sonic.jpg",
+        descripcion: "Cachito abandona el campo para viajar a Buenos Aires por la visita del Papa, pero se queda dormido en el Tren Sarmiento y termina atrapado en Haedo al caer la noche. Una maldición provocada por un apagón de Edenor ha convertido el Conurbano en un infierno lleno de criaturas monstruosas, colectivos asesinos y fisuras poseídos por el ritmo ragatanga. Armado con su termo Lumilagro, un mate justiciero y un perro callejero, deberá llegar al mítico Gallo de Morón para salvar la Zona Oeste antes del amanecer.",
+        stock: 2
+    },{
+        id:5,
+        nombre: "The Legend of Melda",
+        precio: 20000,
+        imagen: "/img/tlom.png",
+        descripcion: "Cachito abandona el campo para viajar a Buenos Aires por la visita del Papa, pero se queda dormido en el Tren Sarmiento y termina atrapado en Haedo al caer la noche. Una maldición provocada por un apagón de Edenor ha convertido el Conurbano en un infierno lleno de criaturas monstruosas, colectivos asesinos y fisuras poseídos por el ritmo ragatanga. Armado con su termo Lumilagro, un mate justiciero y un perro callejero, deberá llegar al mítico Gallo de Morón para salvar la Zona Oeste antes del amanecer.",
+        stock: 2
+    },{
+        id:6,
+        nombre: "DBZ: Tekainchi 4",
+        precio: 20000,
+        imagen: "/img/dbz4.png",
+        descripcion: "Cachito abandona el campo para viajar a Buenos Aires por la visita del Papa, pero se queda dormido en el Tren Sarmiento y termina atrapado en Haedo al caer la noche. Una maldición provocada por un apagón de Edenor ha convertido el Conurbano en un infierno lleno de criaturas monstruosas, colectivos asesinos y fisuras poseídos por el ritmo ragatanga. Armado con su termo Lumilagro, un mate justiciero y un perro callejero, deberá llegar al mítico Gallo de Morón para salvar la Zona Oeste antes del amanecer.",
+        stock: 2
+    },{
+        id:7,
+        nombre: "Silencio Gil 1: Aura Edition",
+        precio: 20000,
+        imagen: "/img/silencio1.jpg",
+        descripcion: "Cachito abandona el campo para viajar a Buenos Aires por la visita del Papa, pero se queda dormido en el Tren Sarmiento y termina atrapado en Haedo al caer la noche. Una maldición provocada por un apagón de Edenor ha convertido el Conurbano en un infierno lleno de criaturas monstruosas, colectivos asesinos y fisuras poseídos por el ritmo ragatanga. Armado con su termo Lumilagro, un mate justiciero y un perro callejero, deberá llegar al mítico Gallo de Morón para salvar la Zona Oeste antes del amanecer.",
+        stock: 2
+    },{
+        id:8,
+        nombre: "Silencio Gil 4: La pieza",
+        precio: 20000,
+        imagen: "/img/silencio4.jpg",
+        descripcion: "Cachito abandona el campo para viajar a Buenos Aires por la visita del Papa, pero se queda dormido en el Tren Sarmiento y termina atrapado en Haedo al caer la noche. Una maldición provocada por un apagón de Edenor ha convertido el Conurbano en un infierno lleno de criaturas monstruosas, colectivos asesinos y fisuras poseídos por el ritmo ragatanga. Armado con su termo Lumilagro, un mate justiciero y un perro callejero, deberá llegar al mítico Gallo de Morón para salvar la Zona Oeste antes del amanecer.",
+        stock: 2
+    },{
+        id:9,
+        nombre: "Residentes Malvados: 8",
+        precio: 20000,
+        imagen: "/img/re8.jpg",
+        descripcion: "Cachito abandona el campo para viajar a Buenos Aires por la visita del Papa, pero se queda dormido en el Tren Sarmiento y termina atrapado en Haedo al caer la noche. Una maldición provocada por un apagón de Edenor ha convertido el Conurbano en un infierno lleno de criaturas monstruosas, colectivos asesinos y fisuras poseídos por el ritmo ragatanga. Armado con su termo Lumilagro, un mate justiciero y un perro callejero, deberá llegar al mítico Gallo de Morón para salvar la Zona Oeste antes del amanecer.",
+        stock: 2
+    },{
+        id:10,
+        nombre: "Carlos Duty: Pala Warfare",
+        precio: 20000,
+        imagen: "/img/carlos.jpg",
+        descripcion: "Cachito abandona el campo para viajar a Buenos Aires por la visita del Papa, pero se queda dormido en el Tren Sarmiento y termina atrapado en Haedo al caer la noche. Una maldición provocada por un apagón de Edenor ha convertido el Conurbano en un infierno lleno de criaturas monstruosas, colectivos asesinos y fisuras poseídos por el ritmo ragatanga. Armado con su termo Lumilagro, un mate justiciero y un perro callejero, deberá llegar al mítico Gallo de Morón para salvar la Zona Oeste antes del amanecer.",
+        stock: 2
+    },{
+        id:11,
+        nombre: "Combate Mortadela",
+        precio: 20000,
+        imagen: "/img/mortadela.jpg",
+        descripcion: "Cachito abandona el campo para viajar a Buenos Aires por la visita del Papa, pero se queda dormido en el Tren Sarmiento y termina atrapado en Haedo al caer la noche. Una maldición provocada por un apagón de Edenor ha convertido el Conurbano en un infierno lleno de criaturas monstruosas, colectivos asesinos y fisuras poseídos por el ritmo ragatanga. Armado con su termo Lumilagro, un mate justiciero y un perro callejero, deberá llegar al mítico Gallo de Morón para salvar la Zona Oeste antes del amanecer.",
+        stock: 2
+    },{
+        id:12,
+        nombre: "Mortal Kumbia: RKT",
+        precio: 20000,
+        imagen: "/img/mortalkumbia.jpg",
+        descripcion: "Cachito abandona el campo para viajar a Buenos Aires por la visita del Papa, pero se queda dormido en el Tren Sarmiento y termina atrapado en Haedo al caer la noche. Una maldición provocada por un apagón de Edenor ha convertido el Conurbano en un infierno lleno de criaturas monstruosas, colectivos asesinos y fisuras poseídos por el ritmo ragatanga. Armado con su termo Lumilagro, un mate justiciero y un perro callejero, deberá llegar al mítico Gallo de Morón para salvar la Zona Oeste antes del amanecer.",
+        stock: 2
+    },{
+        id:13,
+        nombre: "Pala Simulator",
+        precio: 2000,
+        imagen: "/img/pala.jpg",
+        descripcion: "Cachito abandona el campo para viajar a Buenos Aires por la visita del Papa, pero se queda dormido en el Tren Sarmiento y termina atrapado en Haedo al caer la noche. Una maldición provocada por un apagón de Edenor ha convertido el Conurbano en un infierno lleno de criaturas monstruosas, colectivos asesinos y fisuras poseídos por el ritmo ragatanga. Armado con su termo Lumilagro, un mate justiciero y un perro callejero, deberá llegar al mítico Gallo de Morón para salvar la Zona Oeste antes del amanecer.",
+        stock: 199
     }
 ];
+

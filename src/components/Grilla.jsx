@@ -1,26 +1,14 @@
-function Grilla({ filas, columnas, contenido }) {
-  const elementosFilas = [];
-  for (let fila = 0; fila < filas; fila++) {
-    const elementosColumnas = [];
-    for (let columna = 0; columna < columnas; columna++) {
-      const indice = fila * columnas + columna;
-      elementosColumnas.push(
-        <div key={indice} className={`col-${12 / columnas}`}>
-          {contenido[indice]}
-        </div>
-      );
-    }
-    elementosFilas.push(
-      <div className="row" key={fila}>
-        {elementosColumnas}
-      </div>
-    );
-  }
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+
+function Grilla({ columnas, contenido }) {
   return (
-    <div className="grillaDeImagenes">
-      {elementosFilas}
-    </div>
+    <Row xs={1} md={columnas} className="g-4">
+      {contenido.map((item, i) => (
+        <Col key={i}>{item}</Col>
+      ))}
+    </Row>
   );
 }
 
-export default Grilla
+export default Grilla;
