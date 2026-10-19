@@ -1,3 +1,21 @@
+El README DEBE CONTENER:
+Nombre del proyecto.
+
+Descripción breve.
+
+Tecnologías utilizadas.
+
+Instrucciones para instalar y correr el proyecto.
+
+
+Integrantes del grupo.
+
+Capturas de pantalla, opcional.
+
+Link al deploy, si lo realizaron.
+
+
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
