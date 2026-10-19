@@ -1,6 +1,6 @@
 function Footer() {
   return (
-    <footer>
+    <footer className="nav-bar text-center p-3">
       <p>GOTY'S MARKET SRL- Proyecto para CIU Unahur2026</p>
     </footer>
   )

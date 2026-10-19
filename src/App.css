@@ -6,4 +6,12 @@
 .nav-bar{
     background-color: #100B00;
     color: #fff;
+    box-shadow: 04 4px 8px #5F4BB6;
+}
+
+.card-productos{
+  --bs-border-color: #5F4BB6;
+  background-color: #100B00;
+  box-shadow: 0 4px 8px #5F4BB6;
+  color: #fff;
 }
