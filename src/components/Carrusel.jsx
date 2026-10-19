@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 
 function Carrusel() {
-  const destacados = productos.filter((elemento => elemento.puntuacion > 9)).map(im => im)
+  const destacados = productos.filter((elemento => elemento.puntuacion >= 9)).map(im => im)
   return (
     <Carousel>
       <Carousel.Item interval={4000}>

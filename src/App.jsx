@@ -4,6 +4,7 @@ import Productos from './pages/Productos'
 import DetalleProducto from './pages/DetalleProducto'
 import Carrito from './pages/Carrito'
 import Header from './components/Header'
+import Footer from './components/Footer'
 import Exito from './pages/Exito'
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <Route path='/carrito' element={<Carrito />} />
         <Route path='/exito/:id' element={<Exito />} />
       </Routes>
+      <Footer/>
     </>
   )
 }

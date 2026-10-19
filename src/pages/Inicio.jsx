@@ -4,7 +4,6 @@ import { Button, Image } from "react-bootstrap";
 import Grilla from "../components/Grilla"
 import ProductoCard from "../components/ProductoCard"
 import {productos} from "../data/productos"
-import Footer from "../components/Footer";
 import styles from "./Inicio.module.css";
 
 function Inicio() {
@@ -21,7 +20,7 @@ function Inicio() {
     <p>Bienvenido a Goty's Market. Una web dedicada puramente a juegos, con el objetivo de destacar y dar la posibilidad de jugar a todos los Gotys que existan. Sé parte de esta pequeña comunidad gamer.</p>
   </div>
   </main>
-  <Footer />
+ 
   </>
   );
 }

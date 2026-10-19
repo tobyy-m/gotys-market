@@ -7,7 +7,11 @@ export const productos = [
         imagenBanner:"/img/bannerGhost.jpg",
         descripcion: "Despojado de tu hogar y harto de vivir en las calles, decidís que es tiempo de recuperar tu casa de una vez por todas. Para eso, es necesario echar a los nuevos dueños. Sin embargo, tu misión no será fácil. Los vecinos ya advirtieron a los dueños sobre vos, así que contrataron a los mejores y más expertos cazadores de fantasmas de la ciudad.",
         stock: 10,
-        puntuacion:10
+        categoria: "Acción",
+        fechaLanzamiento: "15/11/2025",
+        puntuacion: 8.5,
+        tamaño: "3.3 GB",
+        idiomas: "Español, Inglés"   
     }, {
         id: 2,
         nombre: "The Binding of Cachito",
@@ -15,8 +19,12 @@ export const productos = [
         imagen: "/img/cachito.jpg",
         imagenBanner:"/img/bannerTBOC.jpg",
         descripcion: "En el recóndito pueblo santiagueño de Tero Violado, Cachito vive tranquilamente junto a su prima-esposa, una experta macumbera. Todo cambia cuando un ritual para invocar al Pomberito sale mal: la criatura aparece poseída por una fuerza desconocida, se encierra en la iglesia y convoca a las criaturas más terroríficas del folclore criollo.",
-        stock: 10,
-        puntuacion:10
+        stock: 17,
+        categoria: "Roguelike de acción",
+        fechaLanzamiento: "23/06/2025",
+        puntuacion: 9.5,
+        tamaño: "4 GB",
+        idiomas: "Español"
     }, {
         id:3,
         nombre: "TBoC: Zona Oeste Core",
@@ -24,99 +32,143 @@ export const productos = [
         imagen: "/img/cachito-2.jpg",
         imagenBanner:"/img/bannerTBOCZonaOeste.jpg",
         descripcion: "Cachito abandona el campo para viajar a Buenos Aires por la visita del Papa, pero se queda dormido en el Tren Sarmiento y termina atrapado en Haedo al caer la noche. Una maldición provocada por un apagón de Edenor ha convertido el Conurbano en un infierno lleno de criaturas monstruosas, colectivos asesinos y fisuras poseídos por el ritmo ragatanga. Armado con su termo Lumilagro, un mate justiciero y un perro callejero, deberá llegar al mítico Gallo de Morón para salvar la Zona Oeste antes del amanecer.",
-        stock: 2,
-        puntuacion:10
+        stock: 25,
+        categoria: "Roguelike de acción",
+        fechaLanzamiento: "04/09/2026",
+        puntuacion: 8.0,
+        tamaño: "5.6 GB",
+        idiomas: "Español"
     },
     {
         id:4,
         nombre: "GTA: Sonic Edition",
-        precio: 20000,
+        precio: 25000,
         imagen: "/img/sonic.jpg",
         imagenBanner:"/img/bannerGhost.jpg",
-        descripcion: "Cachito abandona el campo para viajar a Buenos Aires por la visita del Papa, pero se queda dormido en el Tren Sarmiento y termina atrapado en Haedo al caer la noche. Una maldición provocada por un apagón de Edenor ha convertido el Conurbano en un infierno lleno de criaturas monstruosas, colectivos asesinos y fisuras poseídos por el ritmo ragatanga. Armado con su termo Lumilagro, un mate justiciero y un perro callejero, deberá llegar al mítico Gallo de Morón para salvar la Zona Oeste antes del amanecer.",
-        stock: 2,
-        puntuacion:9
+        descripcion: "Tras ser expulsado de su barrio por no pagar las expensas, un erizo azul con exceso de velocidad y cero licencia de conducir decide hacerse un nombre en el mundo del hampa. Robá autos, esquivá a la policía a mil por hora y juntá anillos que, por alguna razón, el banco acepta como moneda legal.",
+        stock: 36,
+        categoria: "Mundo abierto",
+        fechaLanzamiento: "11/08/2019",
+        puntuacion: 7.5,
+        tamaño: "107 GB",
+        idiomas: "Español, Inglés"
     },{
         id:5,
         nombre: "The Legend of Melda",
-        precio: 20000,
+        precio: 22000,
         imagen: "/img/tlom.png",
         imagenBanner:"/img/bannerGhost.jpg",
-        descripcion: "Cachito abandona el campo para viajar a Buenos Aires por la visita del Papa, pero se queda dormido en el Tren Sarmiento y termina atrapado en Haedo al caer la noche. Una maldición provocada por un apagón de Edenor ha convertido el Conurbano en un infierno lleno de criaturas monstruosas, colectivos asesinos y fisuras poseídos por el ritmo ragatanga. Armado con su termo Lumilagro, un mate justiciero y un perro callejero, deberá llegar al mítico Gallo de Morón para salvar la Zona Oeste antes del amanecer.",
-        stock: 2,
-        puntuacion:7
+        descripcion: "El reino de Hiruli está en peligro y solo una heroína con orejas puntiagudas y muy mal sentido de la orientación puede salvarlo. Recorré mazmorras, resolvé acertijos imposibles y cortá pasto durante horas buscando monedas, mientras una princesa te llama por teléfono para recordarte que todavía no hiciste nada.",
+        stock: 5,
+        categoria: "Acción",
+        fechaLanzamiento: "15/11/2017",
+        puntuacion: 7.0,
+        tamaño: "54 GB",
+        idiomas: "Español, Inglés"
     },{
         id:6,
         nombre: "DBZ: Tekainchi 4",
-        precio: 20000,
+        precio: 14000,
         imagen: "/img/dbz4.png",
         imagenBanner:"/img/bannerDBZBudokaiTenkaichi4.jpg",
-        descripcion: "Cachito abandona el campo para viajar a Buenos Aires por la visita del Papa, pero se queda dormido en el Tren Sarmiento y termina atrapado en Haedo al caer la noche. Una maldición provocada por un apagón de Edenor ha convertido el Conurbano en un infierno lleno de criaturas monstruosas, colectivos asesinos y fisuras poseídos por el ritmo ragatanga. Armado con su termo Lumilagro, un mate justiciero y un perro callejero, deberá llegar al mítico Gallo de Morón para salvar la Zona Oeste antes del amanecer.",
-        stock: 2,
-        puntuacion:10
+        descripcion: "Los guerreros más poderosos del universo vuelven para la cuarta entrega del torneo más esperado, y esta vez nadie puede transformarse sin antes gritar durante veinte minutos. Elegí tu personaje, juntá las esferas y descubrí si tu control aguanta el último ataque especial, que tarda tres capítulos en cargarse.",
+        stock: 29,
+        categoria: "Acción",
+        fechaLanzamiento: "19/01/2020",
+        puntuacion: 8.0,
+        tamaño: "14 GB",
+        idiomas: "Español, Inglés"
     },{
         id:7,
         nombre: "Silencio Gil 1: Aura Edition",
-        precio: 20000,
+        precio: 30000,
         imagen: "/img/silencio1.jpg",
         imagenBanner:"/img/bannerGhost.jpg",
-        descripcion: "Cachito abandona el campo para viajar a Buenos Aires por la visita del Papa, pero se queda dormido en el Tren Sarmiento y termina atrapado en Haedo al caer la noche. Una maldición provocada por un apagón de Edenor ha convertido el Conurbano en un infierno lleno de criaturas monstruosas, colectivos asesinos y fisuras poseídos por el ritmo ragatanga. Armado con su termo Lumilagro, un mate justiciero y un perro callejero, deberá llegar al mítico Gallo de Morón para salvar la Zona Oeste antes del amanecer.",
-        stock: 2,
-        puntuacion:7
+        descripcion: "Un hombre llega a un pueblo cubierto de niebla buscando a su hija, pero lo único que encuentra es gente con muchísima aura y ningún interés en ayudarlo. Explorá calles desiertas, escuchá interferencias en la radio y tratá de sobrevivir a criaturas que te miran fijo sin parpadear. Ojo: la niebla no es el problema, es el aura.",
+        stock: 9,
+        categoria: "Terror",
+        fechaLanzamiento: "16/12/2018",
+        puntuacion: 8.5,
+        tamaño: "30 GB",
+        idiomas: "Español"
     },{
         id:8,
         nombre: "Silencio Gil 4: La pieza",
-        precio: 20000,
+        precio: 33000,
         imagen: "/img/silencio4.jpg",
         imagenBanner:"/img/bannerGhost.jpg",
-        descripcion: "Cachito abandona el campo para viajar a Buenos Aires por la visita del Papa, pero se queda dormido en el Tren Sarmiento y termina atrapado en Haedo al caer la noche. Una maldición provocada por un apagón de Edenor ha convertido el Conurbano en un infierno lleno de criaturas monstruosas, colectivos asesinos y fisuras poseídos por el ritmo ragatanga. Armado con su termo Lumilagro, un mate justiciero y un perro callejero, deberá llegar al mítico Gallo de Morón para salvar la Zona Oeste antes del amanecer.",
-        stock: 2,
-        puntuacion:9
+        descripcion: "Despertás encerrado en un departamento del que no podés salir, con la puerta trabada por dentro y un baño que parece llevar a otra dimensión. Cada día que pasa, la pieza se vuelve más extraña y los ruidos de los vecinos, más sospechosos. Una experiencia de terror psicológico donde el peor monstruo es el alquiler.",
+        stock: 13,
+        categoria: "Terror",
+        fechaLanzamiento: "15/11/2025",
+        puntuacion: 9.0,
+        tamaño: "45 GB",
+        idiomas: "Español, Inglés"
     },{
         id:9,
         nombre: "Residentes Malvados: 8",
-        precio: 20000,
+        precio: 27000,
         imagen: "/img/re8.jpg",
         imagenBanner:"/img/bannerGhost.jpg",
-        descripcion: "Cachito abandona el campo para viajar a Buenos Aires por la visita del Papa, pero se queda dormido en el Tren Sarmiento y termina atrapado en Haedo al caer la noche. Una maldición provocada por un apagón de Edenor ha convertido el Conurbano en un infierno lleno de criaturas monstruosas, colectivos asesinos y fisuras poseídos por el ritmo ragatanga. Armado con su termo Lumilagro, un mate justiciero y un perro callejero, deberá llegar al mítico Gallo de Morón para salvar la Zona Oeste antes del amanecer.",
-        stock: 2,
-        puntuacion:9
+        descripcion: "Una mansión olvidada, un pueblo lleno de criaturas y un protagonista que nunca llegó a entender por qué siempre le pasan estas cosas. Administrá tu inventario con cuidado, resolvé puzzles con llaves en forma de animal y sobrevivir a una señora altísima que no para de perseguirte. Munición limitada, nervios también.",
+        stock: 18,
+        categoria: "Terror",
+        fechaLanzamiento: "24/07/2024",
+        puntuacion: 9.0,
+        tamaño: "28 GB",
+        idiomas: "Español, Inglés"
     },{
         id:10,
         nombre: "Carlos Duty: Pala Warfare",
-        precio: 20000,
+        precio: 21000,
         imagen: "/img/carlos.jpg",
         imagenBanner:"/img/bannerGhost.jpg",
-        descripcion: "Cachito abandona el campo para viajar a Buenos Aires por la visita del Papa, pero se queda dormido en el Tren Sarmiento y termina atrapado en Haedo al caer la noche. Una maldición provocada por un apagón de Edenor ha convertido el Conurbano en un infierno lleno de criaturas monstruosas, colectivos asesinos y fisuras poseídos por el ritmo ragatanga. Armado con su termo Lumilagro, un mate justiciero y un perro callejero, deberá llegar al mítico Gallo de Morón para salvar la Zona Oeste antes del amanecer.",
-        stock: 2,
-        puntuacion:5
+        descripcion: "El frente de batalla se trasladó a la obra en construcción más peligrosa del mundo. Unite a un escuadrón de albañiles de élite y enfrentá a equipos rivales en mapas llenos de zanjas, bolsas de cemento y mezcladoras fuera de control. En esta guerra moderna, el arma más letal es la pala, y la munición es el mate.",
+        stock: 5,
+        categoria: "Acción",
+        fechaLanzamiento: "14/05/2016",
+        puntuacion: 8.5,
+        tamaño: "65 GB",
+        idiomas: "Español"
     },{
         id:11,
         nombre: "Combate Mortadela",
-        precio: 20000,
+        precio: 12000,
         imagen: "/img/mortadela.jpg",
         imagenBanner:"/img/bannerGhost.jpg",
-        descripcion: "Cachito abandona el campo para viajar a Buenos Aires por la visita del Papa, pero se queda dormido en el Tren Sarmiento y termina atrapado en Haedo al caer la noche. Una maldición provocada por un apagón de Edenor ha convertido el Conurbano en un infierno lleno de criaturas monstruosas, colectivos asesinos y fisuras poseídos por el ritmo ragatanga. Armado con su termo Lumilagro, un mate justiciero y un perro callejero, deberá llegar al mítico Gallo de Morón para salvar la Zona Oeste antes del amanecer.",
-        stock: 2,
-        puntuacion:8
+        descripcion: "Los mejores luchadores del fiambrerío se enfrentan en un torneo donde cada golpe puede cortarte en rodajas finitas. Elegí entre una colección de personajes grasosos, aprendé combos con nombres imposibles y llegá a la final para descubrir quién es el verdadero rey del sánguche de miga.",
+        stock: 30,
+        categoria: "Acción",
+        fechaLanzamiento: "15/11/2025",
+        puntuacion: 6.0,
+        tamaño: "4.7 GB",
+        idiomas: "Español"
     },{
         id:12,
         nombre: "Mortal Kumbia: RKT",
-        precio: 20000,
+        precio: 15000,
         imagen: "/img/mortalkumbia.jpg",
         imagenBanner:"/img/bannerGhost.jpg",
-        descripcion: "Cachito abandona el campo para viajar a Buenos Aires por la visita del Papa, pero se queda dormido en el Tren Sarmiento y termina atrapado en Haedo al caer la noche. Una maldición provocada por un apagón de Edenor ha convertido el Conurbano en un infierno lleno de criaturas monstruosas, colectivos asesinos y fisuras poseídos por el ritmo ragatanga. Armado con su termo Lumilagro, un mate justiciero y un perro callejero, deberá llegar al mítico Gallo de Morón para salvar la Zona Oeste antes del amanecer.",
-        stock: 2,
-        puntuacion:7
+        descripcion: "Un torneo ancestral reúne a los combatientes más peligrosos del reino, pero esta vez las peleas se resuelven al ritmo de la cumbia y el reggaetón. Dominá combos con coreografía, ejecutá fatalities con perreo intenso y demostrá que en esta arena solo sobrevive el que sabe bailar. Termínalo con estilo.",
+        stock: 27,
+        categoria: "Acción",
+        fechaLanzamiento: "26/03/2021",
+        puntuacion: 6.5,
+        tamaño: "5.4 GB",
+        idiomas: "Español"
     },{
         id:13,
         nombre: "Pala Simulator",
         precio: 2000,
         imagen: "/img/pala.jpg",
         imagenBanner:"/img/bannerGhost.jpg",
-        descripcion: "Cachito abandona el campo para viajar a Buenos Aires por la visita del Papa, pero se queda dormido en el Tren Sarmiento y termina atrapado en Haedo al caer la noche. Una maldición provocada por un apagón de Edenor ha convertido el Conurbano en un infierno lleno de criaturas monstruosas, colectivos asesinos y fisuras poseídos por el ritmo ragatanga. Armado con su termo Lumilagro, un mate justiciero y un perro callejero, deberá llegar al mítico Gallo de Morón para salvar la Zona Oeste antes del amanecer.",
+        descripcion: "El simulador más realista del mercado, donde vas a cavar pozos, mover tierra y llenar carretillas con una precisión nunca antes vista. Desbloqueá palas de distintos tamaños, mejorá tu resistencia y descubrí que, a veces, la vida es simplemente agarrar la pala y seguir. Incluye mate virtual para recuperar energía.",
         stock: 199,
-        puntuacion:1
+        categoria: "Acción",
+        fechaLanzamiento: "15/11/2025",
+        puntuacion: 5.0,
+        tamaño: "2 GB",
+        idiomas: "Español, Inglés"
     }
 ];
 
