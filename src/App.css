@@ -42,6 +42,20 @@ body {
   color: #fff;
 }
 
+.card-productos-descripcion {
+  display: -webkit-box;
+  line-clamp: 2;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.card-productos-precio {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #B0DAF1;
+}
+
 .imagen-producto {
   display: block;
   margin: 0 auto;
