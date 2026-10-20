@@ -6,7 +6,15 @@
 .nav-bar{
     background-color: #100B00;
     color: #fff;
-    box-shadow: 04 4px 8px #5F4BB6;
+    box-shadow: 4px 2px 2px 2px #5F4BB6;
+}
+
+.footer{
+  text-align: center;
+  padding: 2rem;
+  background-color: #100B00;
+  color: #fff;
+  box-shadow: 4px 2px 2px 5px #5F4BB6;
 }
 
 .card-productos{
@@ -34,4 +42,36 @@
 .boton-carrito:hover {
   background-color: #4A3A94;
   border-color: #4A3A94;
+}
+
+.no-encontrado {
+  background-color: #100B00;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 56px);
+  padding: 2rem;
+}
+
+.no-encontrado-contenido {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  width: 100%;
+  max-width: 1000px;
+  text-align: center;
+}
+
+.no-encontrado-imagen {
+  width: auto;
+  height: 260px;
+}
+
+.no-encontrado-boton{
+  background-color: #B0DAF1;
+  color: #100B00;
+  border-color: #5F4BB6;
 }

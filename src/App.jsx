@@ -6,6 +6,7 @@ import Carrito from './pages/Carrito'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import Exito from './pages/Exito'
+import NoEncontrado from './pages/NoEncontrado'
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path='/producto/:id' element={<DetalleProducto />} />
         <Route path='/carrito' element={<Carrito />} />
         <Route path='/exito/:id' element={<Exito />} />
+        <Route path='*' element={<NoEncontrado />} />
       </Routes>
       <Footer/>
     </>
