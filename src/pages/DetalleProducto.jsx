@@ -8,8 +8,11 @@ import Image from 'react-bootstrap/Image';
 import Badge from 'react-bootstrap/Badge';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
+import { useContext } from "react";
+import { CarritoContext, agregarAlCarrito } from "../context/CarritoContext";
 
 function DetalleProducto() {
+  const { carrito, setCarrito } = useContext(CarritoContext);
   const { id } = useParams();
   const producto = productos.find(p => p.id === Number(id));
 
@@ -49,7 +52,7 @@ function DetalleProducto() {
             <span>${producto.precio}</span>
           </div>
 
-          <Button className="boton-carrito w-100 mt-3">
+          <Button className="boton-carrito w-100 mt-3" onClick={() => agregarAlCarrito(carrito, setCarrito, producto.id)}>
             <i className="bi bi-minecart" /> Agregar al carrito
           </Button>
         </Col>

@@ -7,10 +7,14 @@ import Header from './components/Header'
 import Footer from './components/Footer'
 import Exito from './pages/Exito'
 import NoEncontrado from './pages/NoEncontrado'
+import { CarritoContext } from './context/CarritoContext'
+import { useState } from 'react'
 
 function App() {
+  const [carrito, setCarrito] = useState([]);
   return (
     <div className="app">
+      <CarritoContext.Provider value={{carrito, setCarrito}}>
       <Header/>
       <main className="app-main">
         <Routes>
@@ -23,6 +27,7 @@ function App() {
         </Routes>
       </main>
       <Footer/>
+      </CarritoContext.Provider>
     </div>
   )
 }

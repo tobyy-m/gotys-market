@@ -1,8 +1,11 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import { Link } from 'react-router-dom';
+import { useContext } from "react";
+import { CarritoContext, agregarAlCarrito } from "../context/CarritoContext";
 
 function ProductoCard({ producto }) {
+  const { carrito, setCarrito } = useContext(CarritoContext);
   return (
     <Card className="h-100 card-productos m-4">
       <Card.Img variant="top" src={producto.imagen} alt={producto.nombre} />
@@ -16,7 +19,7 @@ function ProductoCard({ producto }) {
         <Button as={Link} to={`/producto/${producto.id}`} variant="outline-info">
           Ver producto
         </Button>
-        <Button disabled>
+        <Button onClick={() => agregarAlCarrito(carrito, setCarrito, producto.id)}>
            <i className="bi bi-minecart" />
         </Button>
         </div>
