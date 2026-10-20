@@ -1,11 +1,18 @@
-.carrusel{
-    text-align: center;
-    vertical-align: middle;
-    width: 100%;
-}
+
 .div{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    padding: 2em;
+}
+.titulo{
     text-align: center;
 }
 .texto{
-    text-align: center;
+    text-align: left;
+}
+
+@media screen {
+    
 }

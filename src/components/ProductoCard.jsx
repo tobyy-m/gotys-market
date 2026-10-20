@@ -13,7 +13,7 @@ function ProductoCard({ producto }) {
         <Card.Title>{producto.nombre}</Card.Title>
         <Card.Text>Precio: ${producto.precio}</Card.Text>
         <div className="d-flex justify-content-between align-items-center mb-2 mt-auto">
-        <Button as={Link} to={`/producto/${producto.id}`} variant="primary">
+        <Button as={Link} to={`/producto/${producto.id}`} variant="outline-info">
           Ver producto
         </Button>
         <Button disabled>
