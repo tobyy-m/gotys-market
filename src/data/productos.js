@@ -69,7 +69,7 @@ export const productos = [
         id:6,
         nombre: "DBZ: Tekainchi 4",
         precio: 14000,
-        imagen: "/img/dbz4.png",
+        imagen: "/img/dbz4.jpg",
         imagenBanner:"/img/bannerDBZBudokaiTenkaichi4.jpg",
         descripcion: "Los guerreros más poderosos del universo vuelven para la cuarta entrega del torneo más esperado, y esta vez nadie puede transformarse sin antes gritar durante veinte minutos. Elegí tu personaje, juntá las esferas y descubrí si tu control aguanta el último ataque especial, que tarda tres capítulos en cargarse.",
         stock: 29,
