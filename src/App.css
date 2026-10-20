@@ -1,26 +1,44 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.app-main {
+  flex-grow: 1;
+  padding-bottom: 3rem;
+}
+
+body {
+  background-color: #100B00;
+  color: #fff;
+  margin: 0px;
+}
+
 .badge {
   background-color: #5F4BB6;
   color: #fff;
 }
 
-.nav-bar{
-    background-color: #100B00;
-    color: #fff;
-    box-shadow: 4px 2px 2px 2px #5F4BB6;
-}
-
-.footer{
-  text-align: center;
-  padding: 2rem;
+.nav-bar {
   background-color: #100B00;
   color: #fff;
-  box-shadow: 4px 2px 2px 5px #5F4BB6;
+  box-shadow: 0 0 10px 0px #5F4BB6;
 }
 
-.card-productos{
+.footer {
+  margin-top: 3rem;
+  text-align: center;
+  padding: 1.5rem 2rem;
+  background-color: #100B00;
+  color: #fff;
+  box-shadow: 0 0 20px #5F4BB6;
+}
+
+.card-productos {
   --bs-border-color: #5F4BB6;
   background-color: #100B00;
-  box-shadow: 0 4px 8px #5F4BB6;
+  box-shadow: 0 0 10px #5F4BB6;
   color: #fff;
 }
 
@@ -35,8 +53,8 @@
 }
 
 .boton-carrito {
-  background-color:#5F4BB6;
-  border-color:#5F4BB6;
+  background-color: #5F4BB6;
+  border-color: #5F4BB6;
 }
 
 .boton-carrito:hover {
@@ -70,7 +88,7 @@
   height: 260px;
 }
 
-.no-encontrado-boton{
+.no-encontrado-boton {
   background-color: #B0DAF1;
   color: #100B00;
   border-color: #5F4BB6;

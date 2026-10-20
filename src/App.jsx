@@ -10,18 +10,20 @@ import NoEncontrado from './pages/NoEncontrado'
 
 function App() {
   return (
-    <>
+    <div className="app">
       <Header/>
-      <Routes>
-        <Route path='/' element={<Inicio />} />
-        <Route path='/productos' element={<Productos />} />
-        <Route path='/producto/:id' element={<DetalleProducto />} />
-        <Route path='/carrito' element={<Carrito />} />
-        <Route path='/exito/:id' element={<Exito />} />
-        <Route path='*' element={<NoEncontrado />} />
-      </Routes>
+      <main className="app-main">
+        <Routes>
+          <Route path='/' element={<Inicio />} />
+          <Route path='/productos' element={<Productos />} />
+          <Route path='/producto/:id' element={<DetalleProducto />} />
+          <Route path='/carrito' element={<Carrito />} />
+          <Route path='/exito/:id' element={<Exito />} />
+          <Route path='*' element={<NoEncontrado />} />
+        </Routes>
+      </main>
       <Footer/>
-    </>
+    </div>
   )
 }
 
