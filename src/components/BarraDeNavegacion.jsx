@@ -9,7 +9,7 @@ function BarraDeNavegacion() {
     <Navbar expand="lg" variant="dark" className="nav-bar">
       <Container>
         <Navbar.Brand as={NavLink} to={"/"}>
-          <img src="/img/logo.png" alt="Logo de Goty's Market" height="30" className="d-inline-block align-top me-2" />
+          <img src="/img/logo.webp" alt="Logo de Goty's Market" height="30" className="d-inline-block align-top me-2" />
           Goty's Market
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
