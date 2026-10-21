@@ -2,7 +2,7 @@ export const productos = [
     {
         id: 1,
         nombre: "Ghost Revenge",
-        precio: 12000,
+        precio: "12.000",
         imagen: "/img/ghost-revenge.webp",
         imagenBanner:"/img/bannerGhost.webp",
         descripcion: "Despojado de tu hogar y harto de vivir en las calles, decidís que es tiempo de recuperar tu casa de una vez por todas. Para eso, es necesario echar a los nuevos dueños. Sin embargo, tu misión no será fácil. Los vecinos ya advirtieron a los dueños sobre vos, así que contrataron a los mejores y más expertos cazadores de fantasmas de la ciudad.",
@@ -15,7 +15,7 @@ export const productos = [
     }, {
         id: 2,
         nombre: "The Binding of Cachito",
-        precio: 12000,
+        precio: "12.000",
         imagen: "/img/cachito.webp",
         imagenBanner:"/img/bannerTBOC.webp",
         descripcion: "En el recóndito pueblo santiagueño de Tero Violado, Cachito vive tranquilamente junto a su prima-esposa, una experta macumbera. Todo cambia cuando un ritual para invocar al Pomberito sale mal: la criatura aparece poseída por una fuerza desconocida, se encierra en la iglesia y convoca a las criaturas más terroríficas del folclore criollo.",
@@ -28,7 +28,7 @@ export const productos = [
     }, {
         id:3,
         nombre: "TBoC: Zona Oeste Core",
-        precio: 20000,
+        precio: "20.000",
         imagen: "/img/cachito-2.webp",
         imagenBanner:"/img/bannerTBOCZonaOeste.webp",
         descripcion: "Cachito abandona el campo para viajar a Buenos Aires por la visita del Papa, pero se queda dormido en el Tren Sarmiento y termina atrapado en Haedo al caer la noche. Una maldición provocada por un apagón de Edenor ha convertido el Conurbano en un infierno lleno de criaturas monstruosas, colectivos asesinos y fisuras poseídos por el ritmo ragatanga. Armado con su termo Lumilagro, un mate justiciero y un perro callejero, deberá llegar al mítico Gallo de Morón para salvar la Zona Oeste antes del amanecer.",
@@ -42,7 +42,7 @@ export const productos = [
     {
         id:4,
         nombre: "GTA: Sonic Edition",
-        precio: 25000,
+        precio: "25.000",
         imagen: "/img/sonic.webp",
         imagenBanner:"/img/bannerSonic.webp",
         descripcion: "Tras ser expulsado de su barrio por no pagar las expensas, un erizo azul con exceso de velocidad y cero licencia de conducir decide hacerse un nombre en el mundo del hampa. Robá autos, esquivá a la policía a mil por hora y juntá anillos que, por alguna razón, el banco acepta como moneda legal.",
@@ -55,7 +55,7 @@ export const productos = [
     },{
         id:5,
         nombre: "The Legend of Melda",
-        precio: 22000,
+        precio: "22.000",
         imagen: "/img/tlom.webp",
         imagenBanner:"/img/bannerTLOM.webp",
         descripcion: "El reino de Hiruli está en peligro y solo una heroína con orejas puntiagudas y muy mal sentido de la orientación puede salvarlo. Recorré mazmorras, resolvé acertijos imposibles y cortá pasto durante horas buscando monedas, mientras una princesa te llama por teléfono para recordarte que todavía no hiciste nada.",
@@ -68,7 +68,7 @@ export const productos = [
     },{
         id:6,
         nombre: "DBZ: Tekainchi 4",
-        precio: 14000,
+        precio: "14.000",
         imagen: "/img/dbz4.webp",
         imagenBanner:"/img/bannerDBZBudokaiTenkaichi4.webp",
         descripcion: "Los guerreros más poderosos del universo vuelven para la cuarta entrega del torneo más esperado, y esta vez nadie puede transformarse sin antes gritar durante veinte minutos. Elegí tu personaje, juntá las esferas y descubrí si tu control aguanta el último ataque especial, que tarda tres capítulos en cargarse.",
@@ -81,7 +81,7 @@ export const productos = [
     },{
         id:7,
         nombre: "Silencio Gil 1: Aura Edition",
-        precio: 30000,
+        precio: "30.000",
         imagen: "/img/silencio1.webp",
         imagenBanner:"/img/bannerSilencioGil1.webp",
         descripcion: "Un hombre llega a un pueblo cubierto de niebla buscando a su hija, pero lo único que encuentra es gente con muchísima aura y ningún interés en ayudarlo. Explorá calles desiertas, escuchá interferencias en la radio y tratá de sobrevivir a criaturas que te miran fijo sin parpadear. Ojo: la niebla no es el problema, es el aura.",
@@ -94,7 +94,7 @@ export const productos = [
     },{
         id:8,
         nombre: "Silencio Gil 4: La pieza",
-        precio: 33000,
+        precio: "33.000",
         imagen: "/img/silencio4.webp",
         imagenBanner:"/img/bannerSilencioGil4.webp",
         descripcion: "Despertás encerrado en un departamento del que no podés salir, con la puerta trabada por dentro y un baño que parece llevar a otra dimensión. Cada día que pasa, la pieza se vuelve más extraña y los ruidos de los vecinos, más sospechosos. Una experiencia de terror psicológico donde el peor monstruo es el alquiler.",
@@ -107,7 +107,7 @@ export const productos = [
     },{
         id:9,
         nombre: "Residentes Malvados: 8",
-        precio: 27000,
+        precio: "27.000",
         imagen: "/img/re8.webp",
         imagenBanner:"/img/bannerRe8.webp",
         descripcion: "Una mansión olvidada, un pueblo lleno de criaturas y un protagonista que nunca llegó a entender por qué siempre le pasan estas cosas. Administrá tu inventario con cuidado, resolvé puzzles con llaves en forma de animal y sobrevivir a una señora altísima que no para de perseguirte. Munición limitada, nervios también.",
@@ -120,7 +120,7 @@ export const productos = [
     },{
         id:10,
         nombre: "Carlos Duty: Pala Warfare",
-        precio: 21000,
+        precio: "21.000",
         imagen: "/img/carlos.webp",
         imagenBanner:"/img/bannerCarlos.webp",
         descripcion: "El frente de batalla se trasladó a la obra en construcción más peligrosa del mundo. Unite a un escuadrón de albañiles de élite y enfrentá a equipos rivales en mapas llenos de zanjas, bolsas de cemento y mezcladoras fuera de control. En esta guerra moderna, el arma más letal es la pala, y la munición es el mate.",
@@ -133,7 +133,7 @@ export const productos = [
     },{
         id:11,
         nombre: "Combate Mortadela",
-        precio: 12000,
+        precio: "12.000",
         imagen: "/img/mortadela.webp",
         imagenBanner:"/img/bannerMortadela.webp",
         descripcion: "Los mejores luchadores del fiambrerío se enfrentan en un torneo donde cada golpe puede cortarte en rodajas finitas. Elegí entre una colección de personajes grasosos, aprendé combos con nombres imposibles y llegá a la final para descubrir quién es el verdadero rey del sánguche de miga.",
@@ -146,7 +146,7 @@ export const productos = [
     },{
         id:12,
         nombre: "Mortal Kumbia: RKT",
-        precio: 15000,
+        precio: "15.000",
         imagen: "/img/mortalkumbia.webp",
         imagenBanner:"/img/bannerMortalkumbia.webp",
         descripcion: "Un torneo ancestral reúne a los combatientes más peligrosos del reino, pero esta vez las peleas se resuelven al ritmo de la cumbia y el reggaetón. Dominá combos con coreografía, ejecutá fatalities con perreo intenso y demostrá que en esta arena solo sobrevive el que sabe bailar. Termínalo con estilo.",
@@ -159,7 +159,7 @@ export const productos = [
     },{
         id:13,
         nombre: "Pala Simulator",
-        precio: 2000,
+        precio: "2.000",
         imagen: "/img/pala.webp",
         imagenBanner:"/img/bannerPala.webp",
         descripcion: "El simulador más realista del mercado, donde vas a cavar pozos, mover tierra y llenar carretillas con una precisión nunca antes vista. Desbloqueá palas de distintos tamaños, mejorá tu resistencia y descubrí que, a veces, la vida es simplemente agarrar la pala y seguir. Incluye mate virtual para recuperar energía.",
