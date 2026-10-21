@@ -68,8 +68,8 @@ body {
 
 .boton-carrito {
   --bs-btn-color:#fff;
-  --bs-btn-bg:#5F4BB6;
-  --bs-btn-border-color: #5F4BB6;
+  --bs-btn-bg:#5f4bb6;
+  --bs-btn-border-color: #5f4bb6;
   --bs-btn-hover-color: #fff;
   --bs-btn-hover-bg: #4A3A94;
   --bs-btn-hover-border-color: #4A3A94;
@@ -150,7 +150,7 @@ body {
 
 @media (max-width: 767px) {
   .carousel-caption h3 {
-    font-size: 0.5rem;
+    font-size: 1.5rem;
   }
 
   .presentacion {

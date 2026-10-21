@@ -1,0 +1,30 @@
+.carrusel {
+    padding: 1em 4em 0em 4em;
+}
+
+.imagenes{
+    width: 100%;
+    border-radius:1em;
+}
+
+.descripcion {
+    display: -webkit-box;
+    line-clamp: 2;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    font-size: 1.2em;
+
+}
+
+@media (max-width: 767px) {
+
+    .descripcion {
+        display: none;
+    }
+
+    .carrusel {
+        padding: 1em 2em 0em 2em;
+    }
+
+}

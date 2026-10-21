@@ -27,7 +27,9 @@ function Inicio() {
           <Button className="boton-ver-producto" as={Link} to={'/productos'} variant="outline-info" style={{ alignSelf: "flex-end", margin: "10px"  }}> Ver catalogo</Button>
         </div>
         <div className="presentacion text-center my-4 px-3">
-          <Image src="/img/logo.webp" rounded width={100} height={90} />
+          <Link to={`/nosotros`}>
+          <Image src="/img/logo.webp" rounded width={100} height={90}  alt="logo" title="logo"/>
+          </Link>
           <p className={styles.texto}> Goty's Market, una web dedicada puramente a juegos, con el objetivo de destacar y dar la posibilidad de jugar a todos los Gotys que existan. Sé parte de esta pequeña comunidad gamer.</p>
         </div>
       </main>

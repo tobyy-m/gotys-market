@@ -8,7 +8,7 @@ function ProductoCard({ producto }) {
   const { carrito, setCarrito } = useContext(CarritoContext);
   return (
     <Card className="h-100 card-productos">
-      <Card.Img variant="top" src={producto.imagen} alt={producto.nombre} />
+      <Card.Img variant="top" src={producto.imagen} alt={producto.nombre}  title={producto.nombre} />
       <Card.Body className="d-flex flex-column">
         <div className="d-flex justify-content-between align-items-center">
           <span className="badge"><i className="bi bi-star-fill"></i> {producto.puntuacion} / 10</span>

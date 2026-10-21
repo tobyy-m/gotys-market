@@ -9,6 +9,7 @@ import Exito from './pages/Exito'
 import NoEncontrado from './pages/NoEncontrado'
 import { CarritoContext } from './context/CarritoContext'
 import { useState } from 'react'
+import Nosotros from './pages/Nosotros'
 
 function App() {
   const [carrito, setCarrito] = useState([]);
@@ -24,6 +25,7 @@ function App() {
           <Route path='/carrito' element={<Carrito />} />
           <Route path='/exito/:id' element={<Exito />} />
           <Route path='*' element={<NoEncontrado />} />
+          <Route path='/nosotros' element={<Nosotros/>}/>
         </Routes>
       </main>
       <Footer/>
