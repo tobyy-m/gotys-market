@@ -146,11 +146,19 @@ body {
   --bs-btn-active-color: #fff;
   --bs-btn-active-bg: #4A3A94;
   --bs-btn-active-border-color: #4A3A94;
-  
 }
+
 @media (max-width: 767px) {
   .carousel-caption h3 {
     font-size: 0.5rem;
+  }
+
+  .presentacion {
+    font-size: 0.6rem;
+  }
+
+  .footer p {
+    font-size: 0.75rem;
   }
 }
 
