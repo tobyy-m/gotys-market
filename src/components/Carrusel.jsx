@@ -13,7 +13,7 @@ function Carrusel() {
         </Link>
         <Carousel.Caption>
           <h3>{destacados.at(destacados.length - 1).nombre}</h3>
-          <p>{destacados.at(destacados.length - 1).descripcion}</p>
+          <p className="d-none d-md-block">{destacados.at(destacados.length - 1).descripcion}</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item interval={4000}>
@@ -22,7 +22,7 @@ function Carrusel() {
         </Link>
         <Carousel.Caption>
           <h3>{destacados.at(destacados.length - 2).nombre}</h3>
-          <p>{destacados.at(destacados.length - 2).descripcion}</p>
+          <p className="d-none d-md-block">{destacados.at(destacados.length - 1).descripcion}</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item interval={4000}>
@@ -31,7 +31,7 @@ function Carrusel() {
         </Link>
         <Carousel.Caption>
           <h3>{destacados.at(destacados.length - 3).nombre}</h3>
-          <p>{destacados.at(destacados.length - 3).descripcion}</p>
+          <p className="d-none d-md-block">{destacados.at(destacados.length - 1).descripcion}</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item interval={4000}>
@@ -40,7 +40,7 @@ function Carrusel() {
         </Link>
         <Carousel.Caption>
           <h3>{destacados.at(destacados.length - 4).nombre}</h3>
-          <p>{destacados.at(destacados.length - 4).descripcion}</p>
+          <p className="d-none d-md-block">{destacados.at(destacados.length - 1).descripcion}</p>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>

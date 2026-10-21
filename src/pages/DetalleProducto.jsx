@@ -18,7 +18,7 @@ function DetalleProducto() {
 
   return (
     <Container className="my-4">
-      <Link to="/productos" className="d-inline-block mb-3 text-decoration-none">
+      <Link to="/productos" className="d-inline-block mb-3 text-decoration-none flecha-volver">
         <i className="bi bi-arrow-left"/> Volver
       </Link>
 
@@ -26,9 +26,9 @@ function DetalleProducto() {
         <Col md={7}>
           <h2>{producto.nombre}</h2>
           <Image src={producto.imagen} alt={producto.nombre} className="imagen-producto" />
-          <Badge bg="secondary" className="mt-2">{producto.categoria}</Badge>
+          <Badge bg="none" text="dark" className="badge-categoria mt-2">{producto.categoria}</Badge>
 
-          <Card className="mt-3">
+          <Card className="descripcion-producto mt-3">
             <Card.Body>
               <Card.Title>Descripción</Card.Title>
               <Card.Text>{producto.descripcion}</Card.Text>
@@ -38,7 +38,7 @@ function DetalleProducto() {
 
         <Col md={5} className="mt-4 mt-md-0">
           <div className="mb-2">
-            <Badge bg="light" text="dark" className="border">Stock: {producto.stock}</Badge>
+            <Badge bg="none" text="dark" className="badge-stock">Stock: {producto.stock}</Badge>
           </div>
           <div className="mb-3">
             <Rating valor={producto.puntuacion} />

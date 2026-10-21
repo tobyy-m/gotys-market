@@ -67,8 +67,15 @@ body {
 }
 
 .boton-carrito {
-  background-color: #5F4BB6;
-  border-color: #5F4BB6;
+  --bs-btn-color:#fff;
+  --bs-btn-bg:#5F4BB6;
+  --bs-btn-border-color: #5F4BB6;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #4A3A94;
+  --bs-btn-hover-border-color: #4A3A94;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #4A3A94;
+  --bs-btn-active-border-color: #4A3A94;
 }
 
 .boton-carrito:hover {
@@ -107,3 +114,43 @@ body {
   color: #100B00;
   border-color: #5F4BB6;
 }
+
+.descripcion-producto {
+  background-color:#100B00;
+  color: #fff;
+  border-color: #5F4BB6;
+}
+
+.badge-stock {
+  background-color:#B0DAF1;
+}
+
+.badge-categoria {
+  background-color:#B0DAF1;
+}
+
+.flecha-volver {
+  color:#B0DAF1;
+}
+
+.flecha-volver:hover {
+  color:#94b4c6;
+}
+
+.boton-ver-producto{
+  --bs-btn-color:#B0DAF1;
+  --bs-btn-border-color: #B0DAF1;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #5F4BB6;
+  --bs-btn-hover-border-color: #5F4BB6;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #4A3A94;
+  --bs-btn-active-border-color: #4A3A94;
+  
+}
+@media (max-width: 767px) {
+  .carousel-caption h3 {
+    font-size: 0.5rem;
+  }
+}
+

@@ -17,10 +17,10 @@ function ProductoCard({ producto }) {
         <Card.Text className='card-productos-descripcion'>{producto.descripcion}</Card.Text>
         <Card.Text className='card-productos-precio'>$ {producto.precio}</Card.Text>
         <div className="d-flex justify-content-between align-items-center mb-2 mt-auto">
-          <Button as={Link} to={`/producto/${producto.id}`} variant="outline-info">
+          <Button className="boton-ver-producto" as={Link} to={`/producto/${producto.id}`} variant="outline-info">
             Ver producto
           </Button>
-          <Button onClick={() => agregarAlCarrito(carrito, setCarrito, producto.id)}>
+          <Button className="boton-carrito" onClick={() => agregarAlCarrito(carrito, setCarrito, producto.id)}>
             <i className="bi bi-minecart" />
           </Button>
         </div>
