@@ -2,9 +2,31 @@
     padding: 1em 4em 0em 4em;
 }
 
-.imagenes{
+.slide {
+    position: relative;
     width: 100%;
-    border-radius:1em;
+    height: 60vh;
+    min-height: 300px;
+    border-radius: 1em;
+    overflow: hidden;
+    background-color: #100B00;
+}
+
+.fondo {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(30px) brightness(0.6);
+
+}
+
+.imagenes {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 .descripcion {
@@ -14,11 +36,9 @@
     -webkit-box-orient: vertical;
     overflow: hidden;
     font-size: 1.2em;
-
 }
 
 @media (max-width: 767px) {
-
     .descripcion {
         display: none;
     }
@@ -26,5 +46,4 @@
     .carrusel {
         padding: 1em 2em 0em 2em;
     }
-
 }
