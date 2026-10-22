@@ -62,7 +62,7 @@ function FormularioCompra({setFormularioValido}) {
 
   return (
     <form id="formulario" className={styles.formulario}>
-      <p>Por favor ingresa tus datos para realizar la compra</p>
+      <p>Por favor ingresá tus datos para realizar la compra</p>
       <div className={styles.campos}>
         <div className={styles.campo}>
           <label for="nombreYApellido">Nombre y apellido *</label>
@@ -78,31 +78,31 @@ function FormularioCompra({setFormularioValido}) {
           <input type="email" id="mail" onChange={cargarMail}></input>
           {mail != "" && !mailEsValido() && (
             <span className={styles.errorFormulario}>
-              Debe ingresar un mail valido.
+              Debe ingresar un mail válido.
             </span>
           )}
         </div>
         <div className={styles.campo}>
-          <label for="telefono">Telefono *</label>
+          <label for="telefono">Teléfono *</label>
           <input type="tel" id="telefono" onChange={cargarTelefono}></input>
           {telefono !== "" && !telefonoEsValido() && (
             <span className={styles.errorFormulario}>
-              Debe ingresar un telefono de 10 digitos.
+              Debe ingresar un teléfono de 10 dígitos.
             </span>
           )}
         </div>
         <div className={styles.campo}>
-          <label for="direccion">Direccion *</label>
+          <label for="direccion">Dirección *</label>
           <input type="text" id="direccion" onChange={cargarDireccion}></input>
           {direccion != "" && !direccionEsValida() && (
             <span className={styles.errorFormulario}>
-              Debe ingresar su direccion
+              Debe ingresar su dirección
             </span>
           )}
         </div>
       </div>
       <div className={styles.metodosDeEntrega}>
-        <p>Metodo de entrega *</p>
+        <p>Método de entrega *</p>
         <div className={styles.opcionesDeEntrega}>
           <label>
           <input type="radio" name="entrega" value="entrega1" onChange={cargarMetodoEntrega}/> entrega1
@@ -119,7 +119,7 @@ function FormularioCompra({setFormularioValido}) {
         </div>
       </div>
       <div className={`${styles.campo} ${styles.observaciones}`}>
-        <label for="obervaciones">Obervaciones</label>
+        <label for="obervaciones">Observaciones</label>
         <textarea id="obervaciones"></textarea>
       </div>
     </form>

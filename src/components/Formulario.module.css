@@ -4,8 +4,8 @@
   margin: 30px 0 30px 0;
   padding: 30px;
 
-  background-color: #5F4BB6;
-  border: 1px solid #B0DAF1;
+  background-color:#100B00;
+  border: 1px solid #5F4BB6;
   border-radius: 12px;
 
   display: flex;
@@ -16,11 +16,11 @@
   p {
     margin: 0;
     font-weight: 600;
-    color: black;
+    color: #fff;
   }
 
   label {
-    color: black;
+    color: #fff;
   }
 }
 
@@ -40,12 +40,15 @@
     }
 
     input , textarea {
+        background-color: #100B00;
         width: 100%;
         padding: 11px 12px;
-        border: 1px solid #B0DAF1;
+        border: 1px solid #5F4BB6;
         border-radius: 6px;
         font: inherit;
         box-sizing: border-box;
+        color: #fff;
+        resize: none;
     }
 }
 

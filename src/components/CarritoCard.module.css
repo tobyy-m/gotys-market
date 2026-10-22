@@ -2,7 +2,7 @@
   width: 100%;
   padding: 12px;
   box-sizing: border-box;
-  background-color: #B0DAF1;
+  background-color: #b0daf1;
   border: 1px solid white;
   border-radius: 10px;
   color: black;
@@ -97,7 +97,7 @@
 
     p {
     font-size: 0.75rem;
-  }
+    }
 
   }
 

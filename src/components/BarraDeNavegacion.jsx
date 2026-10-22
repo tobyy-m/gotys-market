@@ -20,7 +20,7 @@ function BarraDeNavegacion() {
           <Nav className="me-auto">
             <Nav.Link as={NavLink} to="/">Inicio</Nav.Link>
             <Nav.Link as={NavLink} to="/productos">Productos</Nav.Link>
-            <Nav.Link as={NavLink} to="/nosotros">Acerca de</Nav.Link>
+            <Nav.Link as={NavLink} to="/nosotros">Sobre nosotros</Nav.Link>
           </Nav>
           <Nav className="ms-auto">
             <Nav.Link as={NavLink} to="/carrito">

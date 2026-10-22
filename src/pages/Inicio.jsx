@@ -24,7 +24,7 @@ function Inicio() {
           </div>
         </section>
         <div className={styles.div}>
-          <Button className="boton-ver-producto" as={Link} to={'/productos'} variant="outline-info" style={{ alignSelf: "flex-end", margin: "10px"  }}> Ver catalogo</Button>
+          <Button className="boton-ver-producto" as={Link} to={'/productos'} variant="outline-info" style={{ alignSelf: "flex-end", margin: "10px"  }}> Ver catálogo</Button>
         </div>
         <div className="presentacion text-center my-4 px-3">
           <Link to={`/nosotros`}>
