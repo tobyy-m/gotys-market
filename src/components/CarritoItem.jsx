@@ -29,8 +29,13 @@ function CarritoItem({formularioValido}) {
           <span>Total:</span>
           <span>{carritoConPrecio.reduce((total, juego) => total + juego.precio * juego.cantidad, 0)}</span>
           </p>
-          <button className={styles.botonCompra} disabled={!formularioValido}>Realizar compra</button>
+          <button form="formulario" className={styles.botonCompra} disabled={carrito.length == 0}>Realizar compra</button>
         </div>
+        {formularioValido && (
+          <div className="alert alert-success mt-3">
+            ¡Formulario validado correctamente!
+          </div>
+        )}
       </section>
   )
 }

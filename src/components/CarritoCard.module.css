@@ -52,7 +52,10 @@
 }
 
 .botonEliminar {
-  padding: 0.04rem 0.06rem !important;  
+  padding: 0.04rem 0.06rem !important;
+  background-color: #b0daf1  !important;
+  border: none !important;
+  color: red !important;
 }
 
 .aumentarReducirCantidad {
@@ -63,6 +66,9 @@
 
   button {
     padding: 0.04rem 0.06rem;
+    background-color: #b0daf1;
+    border: none;
+    color: #5F4BB6;
   }
 
   p {

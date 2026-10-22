@@ -1,10 +1,10 @@
 .carrito {
-  background-color:#100B00;
-  width: 40%;
-  min-width: 320px;
-  max-width: 500px;
-  margin: 30px 0;
-  padding: 24px;
+  background-color: #100B00;
+  width: 100%;
+  min-width: 0;
+  max-width: none;
+  margin: 0;
+  padding: 28px;
 
   display: flex;
   flex-direction: column;

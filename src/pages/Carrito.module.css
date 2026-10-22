@@ -1,0 +1,35 @@
+
+.contenedor {
+  display: flex;
+  align-items: flex-start;
+  gap: 35px;
+  width: 95%;
+  max-width: 1600px;
+  margin: 30px auto;
+  padding: 20px;
+}
+
+.formulario {
+  flex: 1.5;
+  min-width: 0;
+}
+
+.carrito {
+  flex: 1;
+  min-width: 0;
+}
+
+/* Adaptación para celulares y pantallas pequeñas */
+@media (max-width: 768px) {
+  .contenedor {
+    flex-direction: column;
+    gap: 25px;
+    width: 100%;
+    padding: 12px;
+  }
+
+  .formulario,
+  .carrito {
+    width: 100%;
+  }
+}

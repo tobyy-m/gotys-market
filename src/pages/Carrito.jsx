@@ -1,13 +1,18 @@
 import { useState } from "react"
 import CarritoItem from "../components/CarritoItem"
 import FormularioCompra from "../components/FormularioCompra"
+import styles from "./Carrito.module.css"
 
 function Carrito() {
   const [formularioValido , setFormularioValido] = useState(false);
   return (
-    <div>
-      <FormularioCompra setFormularioValido={setFormularioValido}/>
-      <CarritoItem formularioValido={formularioValido}/>
+    <div className={styles.contenedor}>
+      <div className={styles.formulario}>
+        <FormularioCompra setFormularioValido={setFormularioValido}/>
+      </div>
+      <div className={styles.carrito}>
+        <CarritoItem formularioValido={formularioValido}/>
+      </div>
     </div>
   )
 }
