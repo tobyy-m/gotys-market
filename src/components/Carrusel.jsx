@@ -4,7 +4,7 @@ import { productos } from "../data/productos"
 import { Link } from 'react-router-dom';
 
 function Carrusel() {
-  const destacados = productos.filter(elemento => elemento.puntuacion >= 9.0)
+  const destacados = productos.filter(elemento => elemento.puntuacion >= 9.0 && elemento.stock>0)
   return (
     <Carousel className={styles.carrusel}>
       {destacados.map(e => (

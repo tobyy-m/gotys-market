@@ -1,19 +1,36 @@
-El README DEBE CONTENER:
-Nombre del proyecto.
+# 🎮 Goty's Market 🎮
+
+![logo](/public/img/imagenNosotros.webp)
 
 Descripción breve.
 
-Tecnologías utilizadas.
+## Tecnologías utilizadas.
+* React + Vite
+* React Bootstrap
+* React DOM
 
-Instrucciones para instalar y correr el proyecto.
+## 💻 Instrucciones para instalar y correr el proyecto.
+
+1. Copiar el link de code en Github.
+2. Utilizando Gitbash clonar el repositorio: `git clone +Link code+`
+3. Abrir la carpeta en Visual Studio Code.
+4. Abrir la terminal del Visual Studio Code.
+5. Instalar las dependencias escribiendo en la terminal: `npm i`
+6. Correr el proyecto escribiendo en la terminal: `npm run dev`
 
 
-Integrantes del grupo.
+## 👻 Integrantes del grupo 11:
+* Aldana Estefanía Quadrini Pessi
+* Matias Kiguez
+* Tobías Nahuel Mercuri
+* Abril Rocío Lara 
 
-Capturas de pantalla, opcional.
+## Capturas de pantalla, opcional.
 
-Link al deploy, si lo realizaron.
 
+## Link al deploy:
+
+### https://gotys-market.vercel.app/
 
 
 # React + Vite

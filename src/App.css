@@ -207,6 +207,19 @@ body {
 .pestañas-nosotros .nav-link:hover {
     color: #fff;
 }
+.pestaña-texto{
+  list-style: none;
+}
+.pestaña-texto li{       
+  margin-bottom: 8px;
+}
+.pestaña-texto i{
+  margin-right: 0.5rem;
+  font-size: 1.1rem;
+}
+.pestaña-texto b{
+  color: #B0DAF1;
+}
 
 @media (max-width: 767px) {
   .carousel-caption h3 {

@@ -1,14 +1,15 @@
-
-.div{
+.div {
     display: flex;
     flex-direction: column;
     align-content: center;
     align-items: center;
     padding: 2em;
 }
-.titulo{
+
+.titulo {
     text-align: center;
 }
-.texto{
+
+.texto {
     text-align: center;
 }
