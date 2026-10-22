@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import { useState } from "react";
+import styles from "./Formulario.module.css"
 
-function FormularioCompra() {
+function FormularioCompra({setFormularioValido}) {
 
   const [nombre , setNombre] = useState("");
   const [mail , setMail] = useState("");
@@ -26,6 +27,7 @@ function FormularioCompra() {
 
   function cargarMetodoEntrega(event) {
     setMetodoEntrega(event.target.value)
+    validarFormulario()
   }
 
   function nombreEsValido() {
@@ -48,8 +50,8 @@ function FormularioCompra() {
     return metodoEntrega != "";
   }
 
-  function elFormularioEstaCompleto() {
-    return (
+  function validarFormulario() {
+    setFormularioValido(
       nombreEsValido() &&
       mailEsValido() &&
       telefonoEsValido() &&
@@ -59,60 +61,67 @@ function FormularioCompra() {
   }
 
   return (
-    <form id="formulario">
+    <form id="formulario" className={styles.formulario}>
       <p>Por favor ingresa tus datos para realizar la compra</p>
-      <label for="nombreYApellido">Nombre y apellido *</label>
-      <input type="text" id="nombreYApellido" onChange={cargarNombre}></input>
-      {nombre != "" && !nombreEsValido() && (
-        <span className="errorFormulario">
-          Debe ingresar su nombre y apellido.
-        </span>
-      )}
-      <br></br>
-      <label for="mail">Mail *</label>
-      <input type="email" id="mail" onChange={cargarMail}></input>
-      {mail != "" && !mailEsValido() && (
-        <span className="errorFormulario">
-          Debe ingresar un mail valido.
-        </span>
-      )}
-      <br></br>
-      <label for="telefono">Telefono *</label>
-      <input type="tel" id="telefono" onChange={cargarTelefono}></input>
-      {telefono !== "" && !telefonoEsValido() && (
-        <span className="errorFormulario">
-          Debe ingresar un telefono de 10 digitos.
-        </span>
-      )}
-      <br></br>
-      <label for="direccion">Direccion *</label>
-      <input type="text" id="direccion" onChange={cargarDireccion}></input>
-      {direccion != "" && !direccionEsValida() && (
-        <span className="errorFormulario">
-          Debe ingresar su direccion
-        </span>
-      )}
-      <br></br>
-      <p>Metodo de entrega *</p>
-      <label>
-        <input type="radio" name="entrega" value="entrega1" onChange={cargarMetodoEntrega}/> entrega1
-      </label>
-      <br></br>
-      <label>
-        <input type="radio" name="entrega" value="entrega2" onChange={cargarMetodoEntrega}/> entrega2
-      </label>
-      <br></br>
-      <label>
-        <input type="radio" name="entrega" value="entrega3" onChange={cargarMetodoEntrega}/> entrega3
-      </label>
-      <br></br>
-      <label>
-        <input type="radio" name="entrega" value="entrega4" onChange={cargarMetodoEntrega}/> entrega4
-      </label>
-      <br></br>
-      <label for="obervaciones">Obervaciones</label>
-      <textarea id="obervaciones"></textarea>
-      <br></br>
+      <div className={styles.campos}>
+        <div className={styles.campo}>
+          <label for="nombreYApellido">Nombre y apellido *</label>
+          <input type="text" id="nombreYApellido" onChange={cargarNombre}></input>
+          {nombre != "" && !nombreEsValido() && (
+            <span className={styles.errorFormulario}>
+              Debe ingresar su nombre y apellido.
+            </span>
+          )}
+        </div>
+        <div className={styles.campo}>
+          <label for="mail">Mail *</label>
+          <input type="email" id="mail" onChange={cargarMail}></input>
+          {mail != "" && !mailEsValido() && (
+            <span className={styles.errorFormulario}>
+              Debe ingresar un mail valido.
+            </span>
+          )}
+        </div>
+        <div className={styles.campo}>
+          <label for="telefono">Telefono *</label>
+          <input type="tel" id="telefono" onChange={cargarTelefono}></input>
+          {telefono !== "" && !telefonoEsValido() && (
+            <span className={styles.errorFormulario}>
+              Debe ingresar un telefono de 10 digitos.
+            </span>
+          )}
+        </div>
+        <div className={styles.campo}>
+          <label for="direccion">Direccion *</label>
+          <input type="text" id="direccion" onChange={cargarDireccion}></input>
+          {direccion != "" && !direccionEsValida() && (
+            <span className={styles.errorFormulario}>
+              Debe ingresar su direccion
+            </span>
+          )}
+        </div>
+      </div>
+      <div className={styles.metodosDeEntrega}>
+        <p>Metodo de entrega *</p>
+        <div className={styles.opcionesDeEntrega}>
+          <label>
+          <input type="radio" name="entrega" value="entrega1" onChange={cargarMetodoEntrega}/> entrega1
+          </label>
+          <label>
+            <input type="radio" name="entrega" value="entrega2" onChange={cargarMetodoEntrega}/> entrega2
+          </label>
+          <label>
+            <input type="radio" name="entrega" value="entrega3" onChange={cargarMetodoEntrega}/> entrega3
+          </label>
+          <label>
+            <input type="radio" name="entrega" value="entrega4" onChange={cargarMetodoEntrega}/> entrega4
+          </label>
+        </div>
+      </div>
+      <div className={`${styles.campo} ${styles.observaciones}`}>
+        <label for="obervaciones">Obervaciones</label>
+        <textarea id="obervaciones"></textarea>
+      </div>
     </form>
   )
 }

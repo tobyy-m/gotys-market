@@ -9,7 +9,7 @@ import Badge from 'react-bootstrap/Badge';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import { useContext } from "react";
-import { CarritoContext, agregarAlCarrito } from "../context/CarritoContext";
+import { CarritoContext, agregarAlCarrito , noHayStock} from "../context/CarritoContext";
 
 function DetalleProducto() {
   const { carrito, setCarrito } = useContext(CarritoContext);
@@ -52,7 +52,7 @@ function DetalleProducto() {
             <span>${producto.precio}</span>
           </div>
 
-          <Button className="boton-carrito w-100 mt-3" onClick={() => agregarAlCarrito(carrito, setCarrito, producto.id)}>
+          <Button className="boton-carrito w-100 mt-3" disabled={noHayStock(producto.id)} onClick={() => agregarAlCarrito(carrito, setCarrito, producto.id)}>
             <i className="bi bi-minecart" /> Agregar al carrito
           </Button>
         </Col>

@@ -1,0 +1,119 @@
+.tarjetaCarrito {
+  width: 100%;
+  padding: 12px;
+  box-sizing: border-box;
+  background-color: #B0DAF1;
+  border: 1px solid white;
+  border-radius: 10px;
+  color: black;
+}
+
+.colImagen {
+  display: flex;
+  justify-content: center;
+}
+
+.imagenJuego {
+  display: block;
+  width: 100%;
+  max-width: 65px;
+  height: 85px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.colInfo {
+  min-width: 0;
+  overflow-wrap: anywhere;
+
+  h3 {
+    margin: 0 0 8px;
+    font-size: 1rem;
+    overflow-wrap: anywhere;
+  }
+
+  p {
+    margin: 0;
+    font-size: 0.85rem;
+    
+  }
+}
+
+.colBotones {
+  min-width: 0;
+}
+
+.finalTarjeta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+  min-width: 0;
+}
+
+.botonEliminar {
+  padding: 0.04rem 0.06rem !important;  
+}
+
+.aumentarReducirCantidad {
+  display: flex;
+  gap: 5px;
+  width: 100%;
+  justify-content: right;
+
+  button {
+    padding: 0.04rem 0.06rem;
+  }
+
+  p {
+    margin: 0;
+    min-width: 16px;
+    text-align: center;
+    font-weight: 600;
+  }
+}
+
+.totalJuego {
+  margin: 0;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-align: right;
+}
+
+@media (max-width: 576px) {
+  .tarjetaCarrito {
+    padding: 8px;
+  }
+
+  .imagenJuego {
+    height: 70px;
+  }
+
+  .colInfo {
+
+    h3 {
+    font-size: 0.9rem;
+    }
+
+    p {
+    font-size: 0.75rem;
+  }
+
+  }
+
+  .finalTarjeta {
+    gap: 8px;
+  }
+
+  .aumentarReducirCantidad {
+    gap: 3px;
+
+    button {
+      padding: 0.02rem 0.04rem;
+    }
+  }
+
+  .totalJuego {
+    font-size: 0.8rem;
+  }
+}

@@ -1,0 +1,93 @@
+.formulario {
+  width: 60%;
+  max-width: 1000px;
+  margin: 30px 0 30px 0;
+  padding: 30px;
+
+  background-color: #5F4BB6;
+  border: 1px solid #B0DAF1;
+  border-radius: 12px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  box-sizing: border-box;
+
+  p {
+    margin: 0;
+    font-weight: 600;
+    color: black;
+  }
+
+  label {
+    color: black;
+  }
+}
+
+.campos {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    min-width: 0;
+    label {
+        font-weight: 600;
+    }
+
+    input , textarea {
+        width: 100%;
+        padding: 11px 12px;
+        border: 1px solid #B0DAF1;
+        border-radius: 6px;
+        font: inherit;
+        box-sizing: border-box;
+    }
+}
+
+.errorFormulario {
+  color: #d93025;
+  font-size: 0.875rem;
+}
+
+.metodosDeEntrega {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.opcionesDeEntrega {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 24px;
+
+  label {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+  }
+}
+
+.observaciones textarea {
+  min-height: 100px;
+}
+
+@media (max-width: 650px) {
+  .formulario {
+    width: 95%;
+    padding: 20px;
+  }
+
+  .campos {
+    grid-template-columns: 1fr;
+  }
+
+  .opcionesEntrega {
+    flex-direction: column;
+    gap: 12px;
+  }
+}

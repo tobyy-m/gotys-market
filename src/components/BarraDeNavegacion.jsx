@@ -3,8 +3,11 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Badge from 'react-bootstrap/Badge';
 import { NavLink } from 'react-router-dom';
+import { useContext } from "react";
+import { CarritoContext } from "../context/CarritoContext";
 
 function BarraDeNavegacion() {
+  const {carrito} = useContext(CarritoContext);
   return (
     <Navbar expand="lg" variant="dark" className="nav-bar">
       <Container>
@@ -22,7 +25,7 @@ function BarraDeNavegacion() {
           <Nav className="ms-auto">
             <Nav.Link as={NavLink} to="/carrito">
               <i className="bi bi-minecart" />
-              <Badge bg="none" className="badge">0</Badge>
+              <Badge bg="none" className="badge">{carrito.reduce((total, juego) => total + juego.cantidad, 0)}</Badge>
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
