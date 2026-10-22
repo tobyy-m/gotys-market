@@ -2,16 +2,17 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import { Link } from 'react-router-dom';
 import { useContext } from "react";
-import { CarritoContext, agregarAlCarrito , noHayStock} from "../context/CarritoContext";
+import { CarritoContext, agregarAlCarrito, noHayStock } from "../context/CarritoContext";
 
 function ProductoCard({ producto }) {
   const { carrito, setCarrito } = useContext(CarritoContext);
   return (
     <Card className="h-100 card-productos">
-      <Card.Img variant="top" src={producto.imagen} alt={producto.nombre}  title={producto.nombre} />
+      <Card.Img variant="top" src={producto.imagen} alt={producto.nombre} title={producto.nombre} />
       <Card.Body className="d-flex flex-column">
         <div className="d-flex justify-content-between align-items-center">
           <span className="badge"><i className="bi bi-star-fill"></i> {producto.puntuacion} / 10</span>
+          {noHayStock(producto.id) ? <span className="badge bg-danger">Sin stock</span> : <span className="badge bg-success">En stock</span>}
         </div>
         <Card.Title>{producto.nombre}</Card.Title>
         <Card.Text className='card-productos-descripcion'>{producto.descripcion}</Card.Text>

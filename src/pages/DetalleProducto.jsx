@@ -9,7 +9,7 @@ import Badge from 'react-bootstrap/Badge';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import { useContext } from "react";
-import { CarritoContext, agregarAlCarrito , noHayStock} from "../context/CarritoContext";
+import { CarritoContext, agregarAlCarrito, noHayStock } from "../context/CarritoContext";
 
 function DetalleProducto() {
   const { carrito, setCarrito } = useContext(CarritoContext);
@@ -19,7 +19,7 @@ function DetalleProducto() {
   return (
     <Container className="my-4">
       <Link to="/productos" className="d-inline-block mb-3 text-decoration-none flecha-volver">
-        <i className="bi bi-arrow-left"/> Volver
+        <i className="bi bi-arrow-left" /> Volver
       </Link>
 
       <Row>
@@ -38,7 +38,7 @@ function DetalleProducto() {
 
         <Col md={5} className="mt-4 mt-md-0">
           <div className="mb-2">
-            <Badge bg="none" text="dark" className="badge-stock">Stock: {producto.stock}</Badge>
+            {noHayStock(producto.id) ? <span className="badge bg-danger">Sin stock</span> : <Badge bg="none" text="dark" className="badge-stock">Stock: {producto.stock}</Badge>}
           </div>
           <div className="mb-3">
             <Rating valor={producto.puntuacion} />

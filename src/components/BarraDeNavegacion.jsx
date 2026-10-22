@@ -8,6 +8,8 @@ import { CarritoContext } from "../context/CarritoContext";
 
 function BarraDeNavegacion() {
   const {carrito} = useContext(CarritoContext);
+  const total = carrito.reduce((acc, juego) => acc + juego.cantidad, 0);
+
   return (
     <Navbar expand="lg" variant="dark" className="nav-bar">
       <Container>
@@ -24,8 +26,8 @@ function BarraDeNavegacion() {
           </Nav>
           <Nav className="ms-auto">
             <Nav.Link as={NavLink} to="/carrito">
-              <i className="bi bi-minecart" />
-              <Badge bg="none" className="badge">{carrito.reduce((total, juego) => total + juego.cantidad, 0)}</Badge>
+              {total > 0 ? <i className="bi bi-minecart-loaded" /> : <i className="bi bi-minecart" />}
+              <Badge bg="none" className="badge">{total}</Badge>
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
