@@ -10,7 +10,7 @@ function NoEncontrado() {
           <h1>Algo no piolaba <br />como tenia que piolar</h1>
           <p>No pudimos encontrar lo que buscabas</p>
           <h2>ERROR 404</h2>
-          <Button className="no-encontrado-boton" as={Link} to="/">Volver a la página principal</Button>
+          <Button className="boton-secundario" as={Link} to="/">Volver a la página principal</Button>
         </div>
       </div>
     </section>

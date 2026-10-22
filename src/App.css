@@ -109,12 +109,6 @@ body {
   height: 260px;
 }
 
-.no-encontrado-boton {
-  background-color: #B0DAF1;
-  color: #100B00;
-  border-color: #5F4BB6;
-}
-
 .descripcion-producto {
   background-color:#100B00;
   color: #fff;
@@ -147,6 +141,40 @@ body {
   --bs-btn-active-bg: #4A3A94;
   --bs-btn-active-border-color: #4A3A94;
 }
+
+
+.card-exito{
+    color: #fff;
+    width: 100%;
+    max-width: 24rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 0.5rem;
+    border-color: #5F4BB6;
+    box-shadow: 0 0 10px #5F4BB6;
+    background-color: #100B00;
+    padding: 1rem;
+}
+
+.boton-secundario {
+  background-color: #B0DAF1;
+  color: #100B00;
+  border-color: #5F4BB6;
+}
+
+.boton-secundario:hover {
+  background-color: #94b4c6;
+  color: #fff;
+  border-color: #4A3A94;
+}
+
+.imagen-exito{
+    width: 200px;
+    height: auto;
+}
+
 
 @media (max-width: 767px) {
   .carousel-caption h3 {
