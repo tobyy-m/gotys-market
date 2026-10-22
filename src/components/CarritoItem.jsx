@@ -33,7 +33,7 @@ function CarritoItem({formularioValido}) {
         </div>
         {formularioValido && (
           <div className="alert alert-success mt-3">
-            ¡Formulario validado correctamente!
+            Compra realizada con exito!
           </div>
         )}
       </section>
