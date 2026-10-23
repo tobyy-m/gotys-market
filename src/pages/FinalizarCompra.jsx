@@ -3,7 +3,7 @@ import CarritoItem from "../components/CarritoItem"
 import FormularioCompra from "../components/FormularioCompra"
 import styles from "./Carrito.module.css"
 
-function Carrito() {
+function FinalizarCompra() {
   const [formularioValido , setFormularioValido] = useState(false);
   return (
     <div className={styles.contenedor}>
@@ -17,4 +17,4 @@ function Carrito() {
   )
 }
 
-export default Carrito
+export default FinalizarCompra

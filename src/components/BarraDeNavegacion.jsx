@@ -6,12 +6,12 @@ import ModalCarrito from './ModalCarrito';
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { useContext } from "react";
-import { CarritoContext } from "../context/CarritoContext";
+import { CarritoContext, totalItems } from "../context/CarritoContext";
 
 function BarraDeNavegacion() {
   const { carrito } = useContext(CarritoContext);
   const [mostrarModal, setMostrarModal] = useState(false);
-  const total = carrito.reduce((acc, juego) => acc + juego.cantidad, 0);
+  const total = totalItems(carrito);
 
   return (
     <>

@@ -62,3 +62,7 @@ export function noHayStock(id) {
     const juego = productos.find(juego => juego.id == id)
     return juego.stock == 0
 }
+
+export function totalItems(carrito) {
+    return carrito.reduce((acc, juego) => acc + juego.cantidad, 0);
+}

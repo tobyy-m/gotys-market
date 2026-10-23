@@ -1,8 +1,12 @@
+import { useContext } from "react";
+import { useNavigate } from "react-router-dom"
+import { CarritoContext } from "../context/CarritoContext";
 import { useState } from "react";
 import styles from "./Formulario.module.css"
 
-function FormularioCompra({setFormularioValido}) {
-
+function FormularioCompra({ setFormularioValido }) {
+  const navigate = useNavigate();
+  const { setCarrito } = useContext(CarritoContext);
   const [formData, setFormData] = useState({
     nombre: "",
     mail: "",
@@ -34,7 +38,7 @@ function FormularioCompra({setFormularioValido}) {
       }
     }
     if (formData.tel.replace(/\D/g, "").length < 10) {
-        newErrors.tel = "Ingrese un numero valido";
+      newErrors.tel = "Ingrese un numero valido";
     }
     if (formData.direccion.trim() === "") {
       newErrors.direccion = "El campo direccion está vacío";
@@ -51,6 +55,9 @@ function FormularioCompra({setFormularioValido}) {
     setErrors(newErrors);
     if (Object.keys(newErrors).length === 0) {
       setFormularioValido(true);
+      setCarrito([]);
+      const idCompra = Math.floor(Math.random() * 1000000);
+      navigate(`/exito/${idCompra}`);
     } else {
       setFormularioValido(false);
     }
@@ -61,48 +68,48 @@ function FormularioCompra({setFormularioValido}) {
       <p>Por favor ingresá tus datos para realizar la compra</p>
       <div className={styles.campos}>
         <div className={styles.campo}>
-          <label for="nombreYApellido">Nombre y apellido *</label>
-          <input type="text" name="nombre" id="nombreYApellido" className={`form-control ${errors.nombre ? "is-invalid" : ""}`}value={formData.nombre}onChange={handleChange}></input>
+          <label htmlFor="nombreYApellido">Nombre y apellido *</label>
+          <input type="text" name="nombre" id="nombreYApellido" className={`form-control ${errors.nombre ? "is-invalid" : ""}`} value={formData.nombre} onChange={handleChange}></input>
           {errors.nombre && (
-                  <div className="invalid-feedback">{errors.nombre}</div>
-                )}
+            <div className="invalid-feedback">{errors.nombre}</div>
+          )}
         </div>
         <div className={styles.campo}>
-          <label for="mail">Mail *</label>
-          <input type="text" name="mail" id="mail" className={`form-control ${errors.mail ? "is-invalid" : ""}`}value={formData.mail}onChange={handleChange}></input>
+          <label htmlFor="mail">Mail *</label>
+          <input type="text" name="mail" id="mail" className={`form-control ${errors.mail ? "is-invalid" : ""}`} value={formData.mail} onChange={handleChange}></input>
           {errors.mail && (
-                  <div className="invalid-feedback">{errors.mail}</div>
-                )}
+            <div className="invalid-feedback">{errors.mail}</div>
+          )}
         </div>
         <div className={styles.campo}>
-          <label for="telefono">Teléfono *</label>
-          <input type="text" name="tel" id="telefono" className={`form-control ${errors.tel ? "is-invalid" : ""}`}value={formData.tel}onChange={handleChange}></input>
+          <label htmlFor="telefono">Teléfono *</label>
+          <input type="text" name="tel" id="telefono" className={`form-control ${errors.tel ? "is-invalid" : ""}`} value={formData.tel} onChange={handleChange}></input>
           {errors.tel && (
-                <div className="invalid-feedback">{errors.tel}</div>
-              )}
+            <div className="invalid-feedback">{errors.tel}</div>
+          )}
         </div>
         <div className={styles.campo}>
-          <label for="direccion">Dirección *</label>
-          <input type="text" name="direccion" id="direccion" className={`form-control ${errors.direccion ? "is-invalid" : ""}`}value={formData.direccion}onChange={handleChange}></input>
+          <label htmlFor="direccion">Dirección *</label>
+          <input type="text" name="direccion" id="direccion" className={`form-control ${errors.direccion ? "is-invalid" : ""}`} value={formData.direccion} onChange={handleChange}></input>
           {errors.direccion && (
-                  <div className="invalid-feedback">{errors.direccion}</div>
-                )}
+            <div className="invalid-feedback">{errors.direccion}</div>
+          )}
         </div>
       </div>
       <div className={styles.metodosDeEntrega}>
         <p>Método de entrega *</p>
         <div className={styles.opcionesDeEntrega}>
           <label>
-          <input type="radio" name="entrega" value="entrega1" onChange={handleChange}/> entrega1
+            <input type="radio" name="entrega" value="entrega1" onChange={handleChange} /> entrega1
           </label>
           <label>
-            <input type="radio" name="entrega" value="entrega2" onChange={handleChange}/> entrega2
+            <input type="radio" name="entrega" value="entrega2" onChange={handleChange} /> entrega2
           </label>
           <label>
-            <input type="radio" name="entrega" value="entrega3" onChange={handleChange}/> entrega3
+            <input type="radio" name="entrega" value="entrega3" onChange={handleChange} /> entrega3
           </label>
           <label>
-            <input type="radio" name="entrega" value="entrega4" onChange={handleChange}/> entrega4
+            <input type="radio" name="entrega" value="entrega4" onChange={handleChange} /> entrega4
           </label>
           {errors.entrega && (
             <div className="invalid-feedback d-block">{errors.entrega}</div>
@@ -110,7 +117,7 @@ function FormularioCompra({setFormularioValido}) {
         </div>
       </div>
       <div className={`${styles.campo} ${styles.observaciones}`}>
-        <label for="obervaciones">Observaciones</label>
+        <label htmlFor="obervaciones">Observaciones</label>
         <textarea id="obervaciones"></textarea>
       </div>
     </form>

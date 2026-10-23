@@ -23,11 +23,11 @@ function CarritoItem({seRequiereFormulario , formularioValido}) {
         <div className={styles.resumenCompra}>
           <p>
             <span>Cant. prod.:</span>
-            <span>{carritoConPrecio.reduce((total, juego) => total + juego.cantidad, 0)}</span>
+            <span>{carritoConPrecio.reduce((total, juego) => total + juego.cantidad, 0)} u.</span>
           </p>
           <p className={styles.precioTotal}>
           <span>Total:</span>
-          <span>{carritoConPrecio.reduce((total, juego) => total + juego.precio * juego.cantidad, 0).toLocaleString("es-AR")}</span>
+          <span>$ {carritoConPrecio.reduce((total, juego) => total + juego.precio * juego.cantidad, 0).toLocaleString("es-AR")}</span>
           </p>
           {seRequiereFormulario &&(
             <button form="formulario" className={styles.botonCompra} disabled={carrito.length == 0}>Realizar compra</button>
