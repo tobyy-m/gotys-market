@@ -8,22 +8,30 @@ import Image from 'react-bootstrap/Image';
 import Badge from 'react-bootstrap/Badge';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
-import { useContext } from "react";
+import { useContext, useState, useEffect } from "react";
 import { CarritoContext, agregarAlCarrito, noHayStock } from "../context/CarritoContext";
 
 function DetalleProducto() {
   const { carrito, setCarrito } = useContext(CarritoContext);
+  const [agregado, setAgregado] = useState(false);
   const { id } = useParams();
   const producto = productos.find(p => p.id === Number(id));
 
+  useEffect(() => {
+    if (!agregado) return;
+    const timer = setTimeout(() => setAgregado(false), 1500);
+    return () => clearTimeout(timer);
+  }, [agregado]);
+
+
   return (
     <Container className="my-4">
-      <Link to="/productos" className="d-inline-block mb-3 text-decoration-none flecha-volver">
+      <Link to="/productos" className="flecha-volver d-inline-block mb-3 text-decoration-none">
         <i className="bi bi-arrow-left" /> Volver
       </Link>
 
       <Row>
-        <Col md={7}>
+        <Col lg={7}>
           <h2>{producto.nombre}</h2>
           <Image src={producto.imagen} alt={producto.nombre} className="imagen-producto" />
           <Badge bg="none" text="dark" className="badge-categoria mt-2">{producto.categoria}</Badge>
@@ -36,24 +44,25 @@ function DetalleProducto() {
           </Card>
         </Col>
 
-        <Col md={5} className="mt-4 mt-md-0">
+        <Col lg={5} className="mt-4 mt-md-0">
           <div className="mb-2">
             {noHayStock(producto.id) ? <span className="badge bg-danger">Sin stock</span> : <Badge bg="none" text="dark" className="badge-stock">Stock: {producto.stock}</Badge>}
           </div>
           <div className="mb-3">
             <Rating valor={producto.puntuacion} />
           </div>
-          <p className="mb-1 mt-2">Lanzamiento: {producto.fechaLanzamiento}</p>
-          <p className="mb-1 mt-2">Tamaño: {producto.tamaño}</p>
-          <p className="mb-1 mt-2">Idiomas: {producto.idiomas}</p>
-
-          <div className="d-flex justify-content-between fs-5 mt-4">
+          <div className="detalles-producto">
+            <p className="mb-1 mt-2">Lanzamiento: {producto.fechaLanzamiento}</p>
+            <p className="mb-1 mt-2">Tamaño: {producto.tamaño}</p>
+            <p className="mb-1 mt-2">Idiomas: {producto.idiomas}</p>
+          </div>
+          <div className="precio-producto d-flex justify-content-between mt-4">
             <span>Precio</span>
             <span>${producto.precio}</span>
           </div>
 
-          <Button className="boton-carrito w-100 mt-3" disabled={noHayStock(producto.id)} onClick={() => agregarAlCarrito(carrito, setCarrito, producto.id)}>
-            <i className="bi bi-minecart" /> Agregar al carrito
+          <Button className="boton-carrito w-100 mt-3" disabled={noHayStock(producto.id)} onClick={() => { agregarAlCarrito(carrito, setCarrito, producto.id); setAgregado(true); }}>
+            <i className={agregado ? "bi bi-check-lg" : "bi bi-minecart"} /> {agregado ? "¡Agregado!" : "Agregar al carrito"}
           </Button>
         </Col>
       </Row>

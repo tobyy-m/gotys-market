@@ -1,11 +1,19 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import { Link } from 'react-router-dom';
-import { useContext } from "react";
+import { useContext, useState, useEffect } from "react";
 import { CarritoContext, agregarAlCarrito, noHayStock } from "../context/CarritoContext";
 
 function ProductoCard({ producto }) {
   const { carrito, setCarrito } = useContext(CarritoContext);
+  const [agregado, setAgregado] = useState(false);
+
+  useEffect(() => {
+    if (!agregado) return;
+    const timer = setTimeout(() => setAgregado(false), 1500);
+    return () => clearTimeout(timer);
+  }, [agregado]);
+
   return (
     <Card className="h-100 card-productos">
       <Card.Img variant="top" src={producto.imagen} alt={producto.nombre} title={producto.nombre} />
@@ -21,8 +29,9 @@ function ProductoCard({ producto }) {
           <Button className="boton-ver-producto" as={Link} to={`/producto/${producto.id}`} variant="outline-info">
             Ver producto
           </Button>
-          <Button disabled={noHayStock(producto.id)} className="boton-carrito" onClick={() => agregarAlCarrito(carrito, setCarrito, producto.id)}>
-            <i className="bi bi-minecart" />
+          <Button disabled={noHayStock(producto.id)} className="boton-carrito" onClick={() => { agregarAlCarrito(carrito, setCarrito, producto.id); setAgregado(true); }}
+            aria-label={agregado ? "Agregado al carrito" : "Agregar al carrito"}>
+            <i className={agregado ? "bi bi-check-lg" : "bi bi-minecart"} />
           </Button>
         </div>
       </Card.Body>

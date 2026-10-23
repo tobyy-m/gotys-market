@@ -99,11 +99,9 @@ body {
   --bs-btn-active-color: #fff;
   --bs-btn-active-bg: #4A3A94;
   --bs-btn-active-border-color: #4A3A94;
-}
-
-.boton-carrito:hover {
-  background-color: #4A3A94;
-  border-color: #4A3A94;
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #4A3A94;
+  --bs-btn-disabled-border-color: #4A3A94;
 }
 
 .no-encontrado {
@@ -136,6 +134,10 @@ body {
   background-color:#100B00;
   color: #fff;
   border-color: #5F4BB6;
+}
+
+.precio-producto {
+  font-size: 1.3rem;
 }
 
 .badge-stock {
@@ -276,6 +278,23 @@ body {
   .tab-content {
       max-width: 900px;
       font-size: 1.5rem;
+  }
+
+  .descripcion-producto {
+    font-size: 1.3rem;
+    margin-bottom: 3%;
+  }
+
+  .detalles-producto {
+    font-size: 1.3rem;
+  }
+
+  .precio-producto {
+    font-size: 1.3rem;
+  }
+
+  .imagen-producto {
+    margin-top: 3%;
   }
 
 }

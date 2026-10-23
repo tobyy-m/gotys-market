@@ -11,7 +11,7 @@ function Nosotros() {
                 <img src="/img/imagenNosotros.webp" alt="banner nosotros" title="banner nosotros" className={styles.imagen} />
                 <div className={styles.caja}>
                     <h2 className={styles.titulo}><i className="bi bi-trophy-fill" style={{marginRight: "0.5rem"}}/>Nuestra Misión: El Olimpo de los Videojuegos<i className="bi bi-trophy-fill" style={{marginLeft: "0.5rem"}}/></h2>
-                    <p>En Goty's Market no somos solo una tienda online; somos un santuario para los amantes de las grandes historias. Nacimos con un objetivo claro: destacar y dar la posibilidad de jugar a todos los GOTY (Game of the Year) que existan. Creemos que las obras maestras de la industria no deben quedar en el olvido. Por eso, te ofrecemos acceso instantáneo a los juegos más galardonados de la historia en formato 100% digital, eliminando esperas y costes de envío.</p>
+                    <p>En Goty's Market no somos solo una tienda online; somos un santuario para los amantes de las grandes historias. Nacimos con un objetivo claro: destacar y dar la posibilidad de jugar a todos los GOTY (Game of the Year) que existan. Creemos que las obras maestras de la industria no deben quedar en el olvido. Por eso, te ofrecemos acceso instantáneo a los juegos más galardonados de la historia en formato 100% digital, eliminando esperas y costos de envío.</p>
                 </div>
                 <Pestañas/>
                 <div className={styles.div}>
