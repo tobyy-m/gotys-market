@@ -33,7 +33,7 @@ function CarritoCard({ producto , cantidad}) {
               </Button>
             </div>
             <p className={styles.totalJuego}>
-              Total: ${producto.precio * cantidad}
+              Total: ${(producto.precio * cantidad).toLocaleString("es-AR")}
             </p>
           </div>
         </Col>

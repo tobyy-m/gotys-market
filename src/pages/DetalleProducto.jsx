@@ -58,7 +58,7 @@ function DetalleProducto() {
           </div>
           <div className="precio-producto d-flex justify-content-between mt-4">
             <span>Precio</span>
-            <span>${producto.precio}</span>
+            <span>${producto.precio.toLocaleString("es-AR")}</span>
           </div>
 
           <Button className="boton-carrito w-100 mt-3" disabled={noHayStock(producto.id)} onClick={() => { agregarAlCarrito(carrito, setCarrito, producto.id); setAgregado(true); }}>

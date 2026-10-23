@@ -15,24 +15,17 @@ function ReducirStock(id) {
 
 export function agregarAlCarrito(carrito, setCarrito, id) {
     if (carrito.find(juego => juego.idProducto == id)) {
-        const carritoActualizado = carrito.map(juego =>
-            juego.idProducto == id
-                ? { ...juego, cantidad: juego.cantidad + 1 }
-                : juego
-        );
-
-        setCarrito(carritoActualizado);
+        aumentarCantidad(carrito , setCarrito , id)
     } else {
         setCarrito([...carrito, {
             idProducto: id,
             cantidad: 1
         }]);
+        ReducirStock(id)
     }
-    ReducirStock(id)
 }
 
 export function aumentarCantidad(carrito, setCarrito, id) {
-    const juegoComprado = productos.find(juego => juego.id == id)
     const carritoActualizado = carrito.map(juego =>
         juego.idProducto == id
             ? { ...juego, cantidad: juego.cantidad + 1 }

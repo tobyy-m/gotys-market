@@ -11,7 +11,7 @@ function Carrito() {
         <FormularioCompra setFormularioValido={setFormularioValido}/>
       </div>
       <div className={styles.carrito}>
-        <CarritoItem formularioValido={formularioValido}/>
+        <CarritoItem seRequiereFormulario={true} formularioValido={formularioValido}/>
       </div>
     </div>
   )

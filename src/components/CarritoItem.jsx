@@ -4,7 +4,7 @@ import CarritoCard from "./CarritoCard"
 import { productos } from "../data/productos"
 import styles from "./CarritoItem.module.css"
 
-function CarritoItem({formularioValido}) {
+function CarritoItem({seRequiereFormulario , formularioValido}) {
   const { carrito } = useContext(CarritoContext);
   const carritoConPrecio = carrito.map(juegoCarrito => {
     const unJuego = productos.find(juego => juego.id == juegoCarrito.idProducto);
@@ -27,9 +27,11 @@ function CarritoItem({formularioValido}) {
           </p>
           <p className={styles.precioTotal}>
           <span>Total:</span>
-          <span>{carritoConPrecio.reduce((total, juego) => total + juego.precio * juego.cantidad, 0)}</span>
+          <span>{carritoConPrecio.reduce((total, juego) => total + juego.precio * juego.cantidad, 0).toLocaleString("es-AR")}</span>
           </p>
-          <button form="formulario" className={styles.botonCompra} disabled={carrito.length == 0}>Realizar compra</button>
+          {seRequiereFormulario &&(
+            <button form="formulario" className={styles.botonCompra} disabled={carrito.length == 0}>Realizar compra</button>
+          )}
         </div>
         {formularioValido && (
           <div className="alert alert-success mt-3">

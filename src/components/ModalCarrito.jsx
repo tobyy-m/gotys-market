@@ -1,6 +1,7 @@
 import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
 import { Link } from 'react-router-dom';
+import CarritoItem from './CarritoItem';
 function ModalCarrito({ mostrar, cerrarModal }) {
 
     
@@ -12,7 +13,7 @@ function ModalCarrito({ mostrar, cerrarModal }) {
             </Modal.Header>
             <Modal.Body>
                 <div className="d-flex justify-content-center align-items-center">
-                    <p>La card del carrito</p>
+                    <CarritoItem seRequiereFormulario={false} formularioValido={false}/>
                 </div>
                 <div className="d-flex justify-content-end mt-3">
                     <Button className="boton-secundario " as={Link} to="/carrito" onClick={cerrarModal}>Finalizar compra</Button>

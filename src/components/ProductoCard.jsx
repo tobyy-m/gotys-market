@@ -24,7 +24,7 @@ function ProductoCard({ producto }) {
         </div>
         <Card.Title>{producto.nombre}</Card.Title>
         <Card.Text className='card-productos-descripcion'>{producto.descripcion}</Card.Text>
-        <Card.Text className='card-productos-precio'>$ {producto.precio}</Card.Text>
+        <Card.Text className='card-productos-precio'>$ {(producto.precio).toLocaleString("es-AR")}</Card.Text>
         <div className="d-flex justify-content-between align-items-center mb-2 mt-auto">
           <Button className="boton-ver-producto" as={Link} to={`/producto/${producto.id}`} variant="outline-info">
             Ver producto
