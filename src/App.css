@@ -4,6 +4,12 @@
   min-height: 100vh;
 }
 
+.btn-carrito {
+    background: none;
+    border: none;
+    color: inherit;
+}
+
 .app-main {
   flex-grow: 1;
   padding-bottom: 3rem;
@@ -33,6 +39,23 @@ body {
   background-color: #100B00;
   color: #fff;
   box-shadow: 0 0 20px #5F4BB6;
+}
+
+.modal-carrito{
+  border-radius: 12px;
+  border: 2px solid #B0DAF1;
+  background-color: #100B00;
+  box-shadow: 0 0 10px #B0DAF1;
+  color: #fff; 
+}
+
+.modal-carrito .btn-close {
+  filter: invert(1);
+}
+
+.modal-carrito .modal-header,
+.modal-carrito .modal-footer {
+  border-color: #B0DAF1;
 }
 
 .card-productos {
