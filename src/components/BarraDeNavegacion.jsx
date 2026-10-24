@@ -21,19 +21,22 @@ function BarraDeNavegacion() {
             <img src="/img/logo.webp" alt="Logo de Goty's Market" height="30" className="d-inline-block align-top me-2" />
             Goty's Market
           </Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+
+          <Nav className="ms-auto order-lg-last flex-row">
+              <Nav.Link as="button" type="button" onClick={() => setMostrarModal(true)}>
+                {total > 0 ? <i className="bi bi-minecart-loaded" /> : <i className="bi bi-minecart" />}
+                <Badge bg="none" className="badge">{total}</Badge>
+              </Nav.Link>
+          </Nav>
+
+          <Navbar.Toggle aria-controls="basic-navbar-nav" className= "ms-2" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
               <Nav.Link as={NavLink} to="/">Inicio</Nav.Link>
               <Nav.Link as={NavLink} to="/productos">Productos</Nav.Link>
               <Nav.Link as={NavLink} to="/nosotros">Sobre nosotros</Nav.Link>
             </Nav>
-            <Nav className="ms-auto">
-              <Nav.Link as="button" type="button" onClick={() => setMostrarModal(true)}>
-                {total > 0 ? <i className="bi bi-minecart-loaded" /> : <i className="bi bi-minecart" />}
-                <Badge bg="none" className="badge">{total}</Badge>
-              </Nav.Link>
-            </Nav>
+          
           </Navbar.Collapse>
         </Container>
       </Navbar>

@@ -208,6 +208,7 @@ body {
 }
 
 .pestañas-nosotros {
+    width: 90%;
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
@@ -215,6 +216,7 @@ body {
 }
 
 .tab-content {
+    width: 90%;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -271,13 +273,13 @@ body {
 
 @media (min-width: 768px) and (max-width: 1023px){
   .pestañas-nosotros {
-    max-width: 900px;
+    max-width: 700px;
     font-size: 1.5rem;
   }
 
   .tab-content {
-      max-width: 900px;
-      font-size: 1.5rem;
+      max-width: 700px;
+      font-size: 1.4rem;
   }
 
   .descripcion-producto {

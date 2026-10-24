@@ -11,11 +11,11 @@
 
 .caja {
     background-color: rgb(95 75 182 / 30%);
+    width: 90%;
+    max-width: 760px;
     margin: 1rem auto;
-    padding: 2rem;
-    text-align: justify;
+    padding: 1rem;
     border-radius: 2rem;
-    max-width: 1200px;
 }
 
 .titulo {
@@ -33,6 +33,7 @@
 }
 
 @media (max-width: 767px) {
+    
     .div p {
         font-size: 1rem;
     }
@@ -57,17 +58,19 @@
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
+
     .div p {
         font-size: 1rem;
     }
 
     .imagen {
-        height: 270px;
-
+        width: 90%;
+        height: 200px;
     }
 
     .caja {
-        max-width: 900px;
+       max-width: fit-content;
+       width: 80%;
     }
 
     .caja .titulo{
@@ -75,7 +78,17 @@
     }
     
     .caja p {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
         text-align: left;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    .caja {
+        height: 190px;
+        max-width: 1200px;
+        align-content: center;
+        padding: 1.5rem 3rem;
     }
 }
