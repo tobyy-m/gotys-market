@@ -5,9 +5,9 @@
 }
 
 .btn-carrito {
-    background: none;
-    border: none;
-    color: inherit;
+  background: none;
+  border: none;
+  color: inherit;
 }
 
 .app-main {
@@ -171,18 +171,18 @@ body {
 
 
 .card-exito{
-    color: #fff;
-    width: 100%;
-    max-width: 24rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    border-radius: 0.5rem;
-    border-color: #5F4BB6;
-    box-shadow: 0 0 10px #5F4BB6;
-    background-color: #100B00;
-    padding: 1rem;
+  color: #fff;
+  width: 100%;
+  max-width: 24rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border-radius: 0.5rem;
+  border-color: #5F4BB6;
+  box-shadow: 0 0 10px #5F4BB6;
+  background-color: #100B00;
+  padding: 1rem;
 }
 
 .boton-secundario {
@@ -205,36 +205,36 @@ body {
 }
 
 .imagen-exito{
-    width: 200px;
-    height: auto;
+  width: 200px;
+  height: auto;
 }
 
 .pestañas-nosotros {
-    width: 90%;
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 40px;
+  width: 90%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
 }
 
 .tab-content {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .pestañas-nosotros .nav-link {
-    color: #5F4BB6;
+  color: #5F4BB6;
 }
 
 .pestañas-nosotros .nav-link.active {
-    background-color: #5F4BB6;
-    color: #fff;
-    border-color: #5F4BB6;
+  background-color: #5F4BB6;
+  color: #fff;
+  border-color: #5F4BB6;
 }
 
 .pestañas-nosotros .nav-link:hover {
-    color: #fff;
+  color: #fff;
 }
 .pestaña-texto{
   list-style: none;
@@ -268,7 +268,28 @@ body {
   }
 
   .tab-content {
-      max-width: 350px;
+    max-width: 350px;
+  }
+
+  .no-encontrado h1 {
+    font-size: 0.9rem;
+  }
+
+  .no-encontrado-texto {
+    font-size: 0.7rem;
+  }
+
+  .no-encontrado h2 {
+    font-size: 0.9rem;
+  }
+
+  .no-encontrado .boton-secundario {
+    --bs-btn-padding-y: 0.1rem;
+    --bs-btn-font-size: 0.7rem;
+  }
+
+  .no-encontrado-imagen {
+    height: 130px;
   }
 
 }
@@ -280,8 +301,8 @@ body {
   }
 
   .tab-content {
-      max-width: 700px;
-      font-size: 1.4rem;
+    max-width: 700px;
+    font-size: 1.4rem;
   }
 
   .descripcion-producto {
@@ -299,6 +320,27 @@ body {
 
   .imagen-producto {
     margin-top: 3%;
+  }
+
+  .no-encontrado h1 {
+    font-size: 2rem;
+  }
+
+  .no-encontrado-texto {
+    font-size: 1.5rem;
+  }
+
+  .no-encontrado h2 {
+    font-size: 2rem;
+  }
+
+  .no-encontrado .boton-secundario {
+    --bs-btn-padding-y: 0.5rem;
+    --bs-btn-font-size: 1.5rem;
+  }
+
+  .no-encontrado-imagen {
+    height: 300px;
   }
 
 }

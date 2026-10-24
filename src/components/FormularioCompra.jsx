@@ -100,16 +100,16 @@ function FormularioCompra({ setFormularioValido }) {
         <p>Método de entrega *</p>
         <div className={styles.opcionesDeEntrega}>
           <label>
-            <input type="radio" name="entrega" value="entrega1" onChange={handleChange} /> entrega1
+            <input type="radio" name="entrega" value="entrega1" onChange={handleChange} /> Mail
           </label>
           <label>
-            <input type="radio" name="entrega" value="entrega2" onChange={handleChange} /> entrega2
+            <input type="radio" name="entrega" value="entrega2" onChange={handleChange} /> Descarga directa
           </label>
           <label>
-            <input type="radio" name="entrega" value="entrega3" onChange={handleChange} /> entrega3
+            <input type="radio" name="entrega" value="entrega3" onChange={handleChange} /> Utorrent
           </label>
           <label>
-            <input type="radio" name="entrega" value="entrega4" onChange={handleChange} /> entrega4
+            <input type="radio" name="entrega" value="entrega4" onChange={handleChange} /> Portable comprimido
           </label>
           {errors.entrega && (
             <div className="invalid-feedback d-block">{errors.entrega}</div>
