@@ -17,7 +17,7 @@ function CarritoItem({seRequiereFormulario , formularioValido}) {
       <section id="carrito" className={styles.carrito}>
         <div className={styles.listaProductos}>
           {carrito.map(unJuego => (
-          <CarritoCard producto={productos.find(juego => juego.id == unJuego.idProducto)} cantidad={unJuego.cantidad}/>
+          <CarritoCard key={unJuego.idProducto} producto={productos.find(juego => juego.id == unJuego.idProducto)} cantidad={unJuego.cantidad}/>
         ))}
         </div>
         <div className={styles.resumenCompra}>

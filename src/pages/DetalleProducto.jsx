@@ -32,7 +32,12 @@ function DetalleProducto() {
 
       <Row>
         <Col lg={7}>
-          <h2>{producto.nombre}</h2>
+          <div className="d-flex justify-content-between align-items-center mb-2">
+            <h2>{producto.nombre}</h2>
+            <div>
+              {noHayStock(producto.id) ? <span className="badge bg-danger">Sin stock</span> : <Badge bg="none" text="dark" className="badge-stock">Stock: {producto.stock}</Badge>}
+            </div>
+          </div>
           <Image src={producto.imagen} alt={producto.nombre} className="imagen-producto" />
           <Badge bg="none" text="dark" className="badge-categoria mt-2">{producto.categoria}</Badge>
 
@@ -45,9 +50,6 @@ function DetalleProducto() {
         </Col>
 
         <Col lg={5} className="mt-4 mt-md-0">
-          <div className="mb-2">
-            {noHayStock(producto.id) ? <span className="badge bg-danger">Sin stock</span> : <Badge bg="none" text="dark" className="badge-stock">Stock: {producto.stock}</Badge>}
-          </div>
           <div className="mb-3">
             <Rating valor={producto.puntuacion} />
           </div>

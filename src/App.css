@@ -24,6 +24,8 @@ body {
 .badge {
   background-color: #5F4BB6;
   color: #fff;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
 }
 
 .nav-bar {
