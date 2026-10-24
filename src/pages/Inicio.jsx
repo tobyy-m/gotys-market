@@ -16,11 +16,11 @@ function Inicio() {
         <section>
           <div className={styles.div}>
             <h1 className={styles.titulo}>PRODUCTOS DESTACADOS</h1>
-            <Grilla filas={1} columnas={4} contenido={destacados.map(elemento => (<ProductoCard key={elemento.id} producto={elemento} />))} />
+            <Grilla contenido={destacados.map(elemento => (<ProductoCard key={elemento.id} producto={elemento} />))} />
           </div>
           <div className={styles.div}>
             <h1 className={styles.titulo}>MÁS VENDIDOS</h1>
-            <Grilla filas={1} columnas={4} contenido={vendidos.map(elemento => (<ProductoCard key={elemento.id} producto={elemento} />))} />
+            <Grilla contenido={vendidos.map(elemento => (<ProductoCard key={elemento.id} producto={elemento} />))} />
           </div>
         </section>
         <div className={styles.div}>

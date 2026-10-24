@@ -12,7 +12,7 @@ function Productos() {
     <Container>
       <h1 className="text-center p-3">Nuestros Productos</h1>
       <Busqueda setFiltrados={setFiltrados}/>
-      <Grilla filas={2} columnas={4} contenido={filtrados.map(elemento => (<ProductoCard key={elemento.id} producto={elemento}/>))}/>
+      <Grilla contenido={filtrados.map(elemento => (<ProductoCard key={elemento.id} producto={elemento}/>))}/>
     </Container>
   )
 }
