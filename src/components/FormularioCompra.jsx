@@ -12,7 +12,8 @@ function FormularioCompra({ setFormularioValido }) {
     mail: "",
     tel: "",
     direccion: "",
-    entrega: ""
+    entrega: "",
+    observaciones: ""
   });
   const [errors, setErrors] = useState({});
 
@@ -76,14 +77,14 @@ function FormularioCompra({ setFormularioValido }) {
         </div>
         <div className={styles.campo}>
           <label htmlFor="mail">Mail *</label>
-          <input type="text" name="mail" id="mail" className={`form-control ${errors.mail ? "is-invalid" : ""}`} value={formData.mail} onChange={handleChange}></input>
+          <input type="email" name="mail" id="mail" className={`form-control ${errors.mail ? "is-invalid" : ""}`} value={formData.mail} onChange={handleChange}></input>
           {errors.mail && (
             <div className="invalid-feedback">{errors.mail}</div>
           )}
         </div>
         <div className={styles.campo}>
           <label htmlFor="telefono">Teléfono *</label>
-          <input type="text" name="tel" id="telefono" className={`form-control ${errors.tel ? "is-invalid" : ""}`} value={formData.tel} onChange={handleChange}></input>
+          <input type="tel" name="tel" id="telefono" className={`form-control ${errors.tel ? "is-invalid" : ""}`} value={formData.tel} onChange={handleChange}></input>
           {errors.tel && (
             <div className="invalid-feedback">{errors.tel}</div>
           )}
@@ -117,8 +118,8 @@ function FormularioCompra({ setFormularioValido }) {
         </div>
       </div>
       <div className={`${styles.campo} ${styles.observaciones}`}>
-        <label htmlFor="obervaciones">Observaciones</label>
-        <textarea id="obervaciones"></textarea>
+        <label htmlFor="observaciones">Observaciones</label>
+        <textarea id="observaciones" name="observaciones" value={formData.observaciones} onChange={handleChange}></textarea>
       </div>
     </form>
   )

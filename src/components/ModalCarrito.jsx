@@ -14,10 +14,15 @@ function ModalCarrito({ mostrar, cerrarModal }) {
             </Modal.Header>
             <Modal.Body>
                 <div className="d-flex justify-content-center align-items-center">
-                    {total > 0 ? <CarritoItem seRequiereFormulario={false} formularioValido={false}/> : <p>Tu carrito está vacío</p>}
+                    {total > 0 ? <CarritoItem seRequiereFormulario={false} formularioValido={false} /> : <p>Tu carrito está vacío</p>}
                 </div>
                 <div className="d-flex justify-content-end mt-3">
-                    {total > 0 ? <Button className="boton-secundario " as={Link} to="/finalizarCompra" onClick={cerrarModal}>Finalizar compra</Button> : <Button className="boton-secundario " as={Link} to="/productos" onClick={cerrarModal}>Seguir Comprando</Button>}
+                    {total > 0 ?
+                    <div>
+                        <Button className="boton-secundario" as={Link} to="/productos" onClick={cerrarModal}>Seguir Comprando</Button>
+                        <Button className="boton-secundario " as={Link} to="/finalizarCompra" onClick={cerrarModal}>Finalizar compra</Button>
+                    </div>
+                        : <Button className="boton-secundario " as={Link} to="/productos" onClick={cerrarModal}>Seguir Comprando</Button>}
                 </div>
             </Modal.Body>
         </Modal>

@@ -43,12 +43,12 @@ body {
   box-shadow: 0 0 20px #5F4BB6;
 }
 
-.modal-carrito{
+.modal-carrito {
   border-radius: 12px;
   border: 2px solid #B0DAF1;
   background-color: #100B00;
   box-shadow: 0 0 10px #B0DAF1;
-  color: #fff; 
+  color: #fff;
 }
 
 .modal-carrito .btn-close {
@@ -92,8 +92,8 @@ body {
 }
 
 .boton-carrito {
-  --bs-btn-color:#fff;
-  --bs-btn-bg:#5f4bb6;
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #5f4bb6;
   --bs-btn-border-color: #5f4bb6;
   --bs-btn-hover-color: #fff;
   --bs-btn-hover-bg: #4A3A94;
@@ -133,7 +133,7 @@ body {
 }
 
 .descripcion-producto {
-  background-color:#100B00;
+  background-color: #100B00;
   color: #fff;
   border-color: #5F4BB6;
 }
@@ -143,23 +143,23 @@ body {
 }
 
 .badge-stock {
-  background-color:#B0DAF1;
+  background-color: #B0DAF1;
 }
 
 .badge-categoria {
-  background-color:#B0DAF1;
+  background-color: #B0DAF1;
 }
 
 .flecha-volver {
-  color:#B0DAF1;
+  color: #B0DAF1;
 }
 
 .flecha-volver:hover {
-  color:#94b4c6;
+  color: #94b4c6;
 }
 
-.boton-ver-producto{
-  --bs-btn-color:#B0DAF1;
+.boton-ver-producto {
+  --bs-btn-color: #B0DAF1;
   --bs-btn-border-color: #B0DAF1;
   --bs-btn-hover-color: #fff;
   --bs-btn-hover-bg: #5F4BB6;
@@ -170,7 +170,7 @@ body {
 }
 
 
-.card-exito{
+.card-exito {
   color: #fff;
   width: 100%;
   max-width: 24rem;
@@ -189,6 +189,7 @@ body {
   background-color: #B0DAF1;
   color: #100B00;
   border-color: #5F4BB6;
+  margin-right: 0.5rem;
 }
 
 .boton-secundario:hover {
@@ -198,13 +199,13 @@ body {
 }
 
 .btn.boton-secundario:active,
-.btn.boton-secundario:focus{
+.btn.boton-secundario:focus {
   background-color: #7a9db3;
   color: #fff;
   border-color: #3B2D78;
 }
 
-.imagen-exito{
+.imagen-exito {
   width: 200px;
   height: auto;
 }
@@ -236,17 +237,21 @@ body {
 .pestañas-nosotros .nav-link:hover {
   color: #fff;
 }
-.pestaña-texto{
+
+.pestaña-texto {
   list-style: none;
 }
-.pestaña-texto li{       
+
+.pestaña-texto li {
   margin-bottom: 8px;
 }
-.pestaña-texto i{
+
+.pestaña-texto i {
   margin-right: 0.5rem;
   font-size: 1.1rem;
 }
-.pestaña-texto b{
+
+.pestaña-texto b {
   color: #B0DAF1;
 }
 
@@ -294,7 +299,7 @@ body {
 
 }
 
-@media (min-width: 768px) and (max-width: 1023px){
+@media (min-width: 768px) and (max-width: 1023px) {
   .pestañas-nosotros {
     max-width: 700px;
     font-size: 1.5rem;
@@ -344,4 +349,3 @@ body {
   }
 
 }
-
