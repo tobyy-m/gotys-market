@@ -2,12 +2,21 @@
 
 ![logo](/public/img/imagenNosotros.webp)
 
-Descripción breve.
+Goty's Market es una tienda ficticia de videojuegos desarrollada como proyecto para la materia Construcion de Interfaces de Usuario. Contiene un catalogo de videojuegos, cuyos detalles como categoria, calificacion y descripcion pueden ser consultados; asi como tambien filtrar productos por nombre u ordenarlos por precio.
+
+La pagina cuenta con un carrito interactivo que permite administrar los productos seleccionados, ver detalles de cada uno como la cantidad seleccionada o precio y consultar el total de la compra. El carrito es accesible a travez de un modal que permite visualizarlo desde cualquier parte de la pagina. Tambien incluye un formulario con validaciones y un proceso de compra simulado con una pantalla de éxito con su número de compra generado al confirmar el pedido.
+
+La interfaz de la pagina es responsive y se adapta a distintos tamaños de pantalla.
 
 ## Tecnologías utilizadas.
-* React + Vite
-* React Bootstrap
-* React DOM
+* React.
+* Vite.
+* React Router.
+* React Bootstrap.
+* Bootstrap Icons.
+* CSS Modules.
+* Context API de React.
+* Git y GitHub.
 
 ## 💻 Instrucciones para instalar y correr el proyecto.
 
@@ -31,21 +40,3 @@ Descripción breve.
 ## Link al deploy:
 
 ### https://gotys-market.vercel.app/
-
-
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
