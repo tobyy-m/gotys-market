@@ -2,9 +2,8 @@
 
 ![logo](/public/img/imagenNosotros.webp)
 
-Goty's Market es una tienda ficticia de videojuegos desarrollada como proyecto para la materia Construcion de Interfaces de Usuario. Contiene un catalogo de videojuegos, cuyos detalles como categoria, calificacion y descripcion pueden ser consultados; asi como tambien filtrar productos por nombre u ordenarlos por precio.
-
-La pagina cuenta con un carrito interactivo que permite administrar los productos seleccionados, ver detalles de cada uno como la cantidad seleccionada o precio y consultar el total de la compra. El carrito es accesible a travez de un modal que permite visualizarlo desde cualquier parte de la pagina. Tambien incluye un formulario con validaciones y un proceso de compra simulado con una pantalla de éxito con su número de compra generado al confirmar el pedido.
+Goty's Market es una tienda ficticia de videojuegos desarrollada como proyecto para la materia Construcción de Interfaces de Usuario. Contiene un catálogo de videojuegos, cuyos detalles como categoría, calificación y descripción pueden ser consultados; así como también filtrar productos por nombre u ordenarlos por precio.
+La página cuenta con un carrito interactivo que permite administrar los productos seleccionados, ver detalles de cada uno como la cantidad seleccionada o precio y consultar el total de la compra. El carrito es accesible a través de un modal que deja visualizarlo desde cualquier parte de la página. También incluye un formulario con validaciones y un proceso de compra simulado con una pantalla de éxito con su respectivo número de compra generado al confirmar el pedido.
 
 La interfaz de la pagina es responsive y se adapta a distintos tamaños de pantalla.
 
