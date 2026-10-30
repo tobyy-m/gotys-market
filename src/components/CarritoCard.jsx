@@ -19,11 +19,11 @@ function CarritoCard({ producto , cantidad}) {
         </Col>
         <Col xs={4} className={styles.colBotones}>
           <div className={styles.finalTarjeta}>
-            <Button className={styles.botonEliminar} onClick={() => eliminarDelCarrito(carrito, setCarrito, producto.id)}>
+            <Button variant="link" className={styles.botonEliminar} onClick={() => eliminarDelCarrito(carrito, setCarrito, producto.id)}>
               <i className="bi bi-x-circle-fill" />
             </Button>
             <div className={styles.aumentarReducirCantidad}>
-              <p>Cant:</p>
+              <p className={styles.indicadorCantidad}>Cant:</p>
               <Button onClick={() => reducirCantidad(carrito, setCarrito, producto.id)}>
                 <i className="bi bi-dash-circle-fill" />
               </Button>

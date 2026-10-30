@@ -3,11 +3,9 @@
   max-width: none;
   margin: 0;
   padding: 30px;
-
   background-color:#100B00;
   border: 1px solid #5F4BB6;
   border-radius: 12px;
-
   display: flex;
   flex-direction: column;
   gap: 18px;

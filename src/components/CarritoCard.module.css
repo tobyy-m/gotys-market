@@ -6,6 +6,13 @@
   border: 1px solid white;
   border-radius: 12px;
   color: black;
+
+  .botonEliminar {
+    padding: 0.04rem 0.06rem;
+    background-color: #b0daf1;
+    border: none;
+    color: red;
+  }
 }
 
 .colImagen {
@@ -49,13 +56,6 @@
   align-items: flex-end;
   gap: 10px;
   min-width: 0;
-}
-
-.botonEliminar {
-  padding: 0.04rem 0.06rem !important;
-  background-color: #b0daf1  !important;
-  border: none !important;
-  color: red !important;
 }
 
 .aumentarReducirCantidad {
@@ -117,6 +117,10 @@
     button {
       padding: 0.02rem 0.04rem;
     }
+  }
+
+  .indicadorCantidad {
+    padding-right: 2.3rem;
   }
 
   .totalJuego {
