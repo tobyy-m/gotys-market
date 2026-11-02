@@ -4,14 +4,13 @@ import FormularioCompra from "../components/FormularioCompra"
 import styles from "./Carrito.module.css"
 
 function FinalizarCompra() {
-  const [formularioValido , setFormularioValido] = useState(false);
   return (
     <div className={styles.contenedor}>
       <div className={styles.formulario}>
-        <FormularioCompra setFormularioValido={setFormularioValido}/>
+        <FormularioCompra/>
       </div>
       <div className={styles.carrito}>
-        <CarritoItem seRequiereFormulario={true} formularioValido={formularioValido}/>
+        <CarritoItem seRequiereFormulario={true}/>
       </div>
     </div>
   )

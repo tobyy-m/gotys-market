@@ -4,7 +4,7 @@ import { CarritoContext } from "../context/CarritoContext";
 import { useState } from "react";
 import styles from "./Formulario.module.css"
 
-function FormularioCompra({ setFormularioValido }) {
+function FormularioCompra() {
   const navigate = useNavigate();
   const { setCarrito } = useContext(CarritoContext);
   const [formData, setFormData] = useState({
@@ -55,13 +55,10 @@ function FormularioCompra({ setFormularioValido }) {
     const newErrors = validateForm();
     setErrors(newErrors);
     if (Object.keys(newErrors).length === 0) {
-      setFormularioValido(true);
       setCarrito([]);
       const idCompra = Math.floor(Math.random() * 1000000);
       navigate(`/exito/${idCompra}`);
-    } else {
-      setFormularioValido(false);
-    }
+    } 
   }
 
   return (
