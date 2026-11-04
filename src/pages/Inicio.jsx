@@ -7,8 +7,8 @@ import { productos } from "../data/productos"
 import styles from "./Inicio.module.css";
 
 function Inicio() {
-  const destacados = productos.filter((elemento => elemento.puntuacion > 7.5)).slice(0, 4).map(im => im)
-  const vendidos = productos.filter((elemento => elemento.stock <= 10 && elemento.stock > 0)).slice(0, 4).map(im => im)
+  const destacados = productos.filter((elemento => elemento.puntuacion > 7.5)).slice(0, 4)
+  const vendidos = productos.filter((elemento => elemento.stock <= 10 && elemento.stock > 0)).slice(0, 4)
   return (
     <>
       <main>
@@ -28,7 +28,7 @@ function Inicio() {
         </div>
         <div className="presentacion text-center my-4 px-3">
           <Link to={`/nosotros`}>
-            <img src="/img/logo.webp"  alt="logo" title="logo" style={{width: "100px", height:"90px"}}/>
+            <img  src="/img/logo.webp"  alt="logo" title="logo" style={{width: "100px", height:"90px"}}/>
           </Link>
           <p className={styles.texto}> Goty's Market, una web dedicada puramente a juegos, con el objetivo de destacar y dar la posibilidad de jugar a todos los Gotys que existan. Sé parte de esta pequeña comunidad gamer.</p>
         </div>
